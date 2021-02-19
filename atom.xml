@@ -8,6 +8,28 @@
     
       
       <item>
+        <title>마크다운 문법</title>
+        
+          <description>&lt;p&gt;#헤더&lt;/p&gt;
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gh&quot;&gt;# header 1&lt;/span&gt;
+&lt;span class=&quot;gu&quot;&gt;## header 2&lt;/span&gt;
+&lt;span class=&quot;gu&quot;&gt;### header 3&lt;/span&gt;
+&lt;span class=&quot;gu&quot;&gt;#### header 4&lt;/span&gt;
+&lt;span class=&quot;gu&quot;&gt;##### header 5&lt;/span&gt;
+&lt;span class=&quot;gu&quot;&gt;###### header 6&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Thu, 03 Dec 2020 08:03:00 +0900</pubDate>
+        <link>
+        /markdown-syntax</link>
+        <guid isPermaLink="true">/markdown-syntax</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Advanced Markdown tips</title>
         
           <description>&lt;p&gt;There are lots of powerful things you can do with the Ghost editor&lt;/p&gt;
