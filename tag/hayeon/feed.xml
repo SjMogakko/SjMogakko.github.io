@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="/tag/hayeon/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/" rel="alternate" type="text/html" />
-  <updated>2021-02-21T01:02:57+09:00</updated>
+  <updated>2021-02-21T01:04:42+09:00</updated>
   <id>/tag/hayeon/feed.xml</id>
 
   
@@ -46,8 +46,8 @@
 
   
     <entry>
-      <title type="html">테스트</title>
-      <link href="/realhayeon" rel="alternate" type="text/html" title="테스트" />
+      <title type="html">2021-02-20 백하연</title>
+      <link href="/realhayeon" rel="alternate" type="text/html" title="2021-02-20 백하연" />
       <published>2021-02-20T23:13:00+09:00</published>
       <updated>2021-02-20T23:13:00+09:00</updated>
       <id>/realhayeon</id>
