@@ -1,0 +1,542 @@
+<h1 id="알고리즘">알고리즘</h1>
+
+<h2 id="탐색-알고리즘">탐색 알고리즘</h2>
+
+<ol>
+  <li>
+    <p>선형탐색</p>
+
+    <p>선형탐색은 리스트의 첫 값부터 마지막 값까지 순차적으로 회전하면서 특정 요소를 찾아내는 알고리즘이다.</p>
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">linear_search</span><span class="p">(</span><span class="n">element</span><span class="p">,</span> <span class="n">some_list</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">some_list</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">some_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">element</span> <span class="p">:</span> <span class="k">return</span> <span class="n">i</span>
+    <span class="k">return</span> <span class="bp">None</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>이진 탐색</p>
+
+    <p>이진탐색은 정렬된 리스트를 기준으로, 중앙값을 확인하고 찾으려는 요소가 왼쪽에 있는지, 오른쪽에 있는지를 판단하여 탐색한다.
+정렬된 리스트에서만 사용할 수 있으나. 대체적으로 선형탐색보다 효율적인 시간 복잡도를 보인다.</p>
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">binary_search</span><span class="p">(</span><span class="n">element</span><span class="p">,</span> <span class="n">some_list</span><span class="p">):</span>
+    <span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">some_list</span><span class="p">)</span>
+    <span class="n">indexs</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
+    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">indexs</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">:</span> <span class="k">return</span> <span class="bp">None</span>
+        <span class="n">idx</span> <span class="o">=</span> <span class="n">indexs</span><span class="p">[</span><span class="n">x</span><span class="o">//</span><span class="mi">2</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">some_list</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">==</span> <span class="n">element</span> <span class="p">:</span> <span class="k">return</span> <span class="n">idx</span>
+        <span class="k">elif</span> <span class="n">element</span> <span class="o">&lt;</span> <span class="n">some_list</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="p">:</span> <span class="n">indexs</span> <span class="o">=</span> <span class="n">indexs</span><span class="p">[:</span><span class="n">x</span><span class="o">//</span><span class="mi">2</span><span class="p">]</span>
+        <span class="k">else</span> <span class="p">:</span> <span class="n">indexs</span> <span class="o">=</span> <span class="n">indexs</span><span class="p">[</span><span class="n">x</span><span class="o">//</span><span class="mi">2</span><span class="o">+</span><span class="mi">1</span><span class="p">:]</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">구분</th>
+      <th style="text-align: center">선형탐색</th>
+      <th style="text-align: center">이분탐색</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">시간복잡도</td>
+      <td style="text-align: center">O(n)</td>
+      <td style="text-align: center">O(lg n)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">정렬 유무</td>
+      <td style="text-align: center">X</td>
+      <td style="text-align: center">O</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="정렬-알고리즘">정렬 알고리즘</h2>
+
+<ol>
+  <li>
+    <p>선택정렬</p>
+
+    <p>리스트 전체를 순회하여 최소값(또는 최댓값)을 찾아낸 뒤에 이를  맨 끝으로 보내는 작업을 반복하여 정렬된 리스트를 만들어내는 알고리즘이다.</p>
+  </li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   <span class="k">def</span> <span class="nf">sel_sort</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+     <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
+       <span class="n">min_idx</span> <span class="o">=</span> <span class="n">i</span>
+       <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+         <span class="k">if</span> <span class="n">a</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">a</span><span class="p">[</span><span class="n">min_idx</span><span class="p">]:</span>
+           <span class="n">min_idx</span> <span class="o">=</span> <span class="n">j</span>
+       <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">a</span><span class="p">[</span><span class="n">min_idx</span><span class="p">]</span> <span class="o">=</span> <span class="n">a</span><span class="p">[</span><span class="n">min_idx</span><span class="p">],</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</code></pre></div></div>
+<ol>
+  <li>
+    <p>삽입 정렬</p>
+
+    <p>각 인덱스의 값들이 정렬된 값들과 비교해 어디에 삽입될지를 정함으로써 정렬을 해나가는 알고리즘이다.</p>
+  </li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   <span class="k">def</span> <span class="nf">insertion_sort</span><span class="p">(</span><span class="n">my_list</span><span class="p">):</span>
+       <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">my_list</span><span class="p">)):</span>
+           <span class="n">key</span> <span class="o">=</span> <span class="n">my_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+           <span class="n">j</span> <span class="o">=</span> <span class="n">i</span> <span class="o">-</span> <span class="mi">1</span>
+           <span class="k">while</span> <span class="n">j</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">my_list</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">key</span><span class="p">:</span>
+               <span class="n">my_list</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">my_list</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+               <span class="n">j</span> <span class="o">=</span> <span class="n">j</span> <span class="o">-</span> <span class="mi">1</span>
+           <span class="n">my_list</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">key</span>
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p>병합정렬</p>
+
+    <p>리스트를 모두 쪼개어냈다가 다시 합치는 순간에 정렬을 하는 알고리즘으로, 분할정복 방식의 정렬 알고리즘이다.</p>
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">merge</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span> <span class="n">list2</span><span class="p">):</span>
+    <span class="n">answer</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">while</span> <span class="bp">True</span> <span class="p">:</span>
+        <span class="k">if</span> <span class="n">list1</span> <span class="o">==</span> <span class="p">[]</span> <span class="p">:</span> <span class="k">return</span> <span class="n">answer</span><span class="o">+</span><span class="n">list2</span>
+        <span class="k">if</span> <span class="n">list2</span> <span class="o">==</span> <span class="p">[]</span> <span class="p">:</span> <span class="k">return</span> <span class="n">answer</span><span class="o">+</span><span class="n">list1</span>
+        <span class="k">if</span> <span class="n">list1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">list2</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
+            <span class="n">answer</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">list1</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
+        <span class="k">else</span> <span class="p">:</span>
+            <span class="n">answer</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">list2</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
+
+<span class="k">def</span> <span class="nf">merge_sort</span><span class="p">(</span><span class="n">my_list</span><span class="p">):</span>
+    <span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">length</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="p">:</span> <span class="k">return</span> <span class="n">my_list</span>
+    <span class="n">list1</span> <span class="o">=</span> <span class="n">my_list</span><span class="p">[:</span><span class="n">length</span><span class="o">//</span><span class="mi">2</span><span class="p">]</span>
+    <span class="n">list2</span> <span class="o">=</span> <span class="n">my_list</span><span class="p">[</span><span class="n">length</span><span class="o">//</span><span class="mi">2</span><span class="p">:]</span>
+    <span class="k">return</span> <span class="n">merge</span><span class="p">(</span><span class="n">merge_sort</span><span class="p">(</span><span class="n">list1</span><span class="p">),</span> <span class="n">merge_sort</span><span class="p">(</span><span class="n">list2</span><span class="p">))</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>퀵 정렬</p>
+
+    <p>분할정복 방식의 정렬 알고리즘, 특정 값을 기준으로 작은 값을 왼쪽에, 큰 값을 오른쪽에 두는 과정을 반복함으로써 정렬한다.</p>
+  </li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   <span class="k">def</span> <span class="nf">swap_elements</span><span class="p">(</span><span class="n">my_list</span><span class="p">,</span> <span class="n">index1</span><span class="p">,</span> <span class="n">index2</span><span class="p">):</span>
+       <span class="n">temp</span> <span class="o">=</span> <span class="n">my_list</span><span class="p">[</span><span class="n">index1</span><span class="p">]</span>
+       <span class="n">my_list</span><span class="p">[</span><span class="n">index1</span><span class="p">]</span> <span class="o">=</span> <span class="n">my_list</span><span class="p">[</span><span class="n">index2</span><span class="p">]</span>
+       <span class="n">my_list</span><span class="p">[</span><span class="n">index2</span><span class="p">]</span> <span class="o">=</span> <span class="n">temp</span>
+       <span class="k">return</span> <span class="n">my_list</span>
+
+   <span class="k">def</span> <span class="nf">partition</span><span class="p">(</span><span class="n">my_list</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">):</span>
+       <span class="n">b</span> <span class="o">=</span> <span class="n">start</span>
+       <span class="n">pivot</span> <span class="o">=</span> <span class="n">my_list</span><span class="p">[</span><span class="n">end</span><span class="p">]</span>
+       <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">start</span><span class="p">,</span><span class="n">end</span><span class="p">):</span>
+           <span class="k">if</span> <span class="n">my_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">pivot</span> <span class="p">:</span>
+               <span class="n">b</span> <span class="o">+=</span> <span class="mi">1</span>
+               <span class="n">my_list</span> <span class="o">=</span> <span class="n">swap_elements</span><span class="p">(</span><span class="n">my_list</span><span class="p">,</span> <span class="n">b</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+       <span class="n">my_list</span> <span class="o">=</span> <span class="n">swap_elements</span><span class="p">(</span><span class="n">my_list</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">end</span><span class="p">)</span>
+       <span class="k">return</span> <span class="n">b</span>
+
+    <span class="k">def</span> <span class="nf">quicksort</span><span class="p">(</span><span class="n">my_list</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">start</span> <span class="o">&gt;=</span> <span class="n">end</span> <span class="p">:</span> <span class="k">return</span>
+    <span class="k">else</span> <span class="p">:</span>
+        <span class="n">idx</span> <span class="o">=</span> <span class="n">partition</span><span class="p">(</span><span class="n">my_list</span><span class="p">,</span><span class="n">start</span><span class="p">,</span><span class="n">end</span><span class="p">)</span>
+
+        <span class="n">quicksort</span><span class="p">(</span><span class="n">my_list</span><span class="p">,</span><span class="n">start</span><span class="p">,</span><span class="n">idx</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">quicksort</span><span class="p">(</span><span class="n">my_list</span><span class="p">,</span><span class="n">idx</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">end</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<h2 id="문제해결에-이용되는-알고리즘">문제해결에 이용되는 알고리즘</h2>
+
+<ol>
+  <li>
+    <h3 id="슬라이딩-윈도-기법">슬라이딩 윈도 기법</h3>
+
+    <p>이전에 사용한 데이터를 이용하여 작업을 처리한다 -&gt; 시간 효율성 증가
+이전 데이터를 사용하되, 불필요한 데이터는 모두 제거한다 -&gt; 메모리 할당 감소</p>
+  </li>
+  <li>
+    <h3 id="투-포인터-기법">투 포인터 기법</h3>
+  </li>
+</ol>
+
+<h1 id="알고리즘-접근법">알고리즘 접근법</h1>
+
+<h3 id="brute-force">Brute Force</h3>
+
+ 	가능한 모든 경우의 수를 구하고, 해당 경우들 중 가장 적합한 해를 찾아내는 것을 의미한다. 직관적으로 풀수 있지만, 그만큼 시간복잡도나 공간복잡도가 비효율	적일 가능성이 크다.
+
+<h4 id="예제">예제</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>카드 두 뭉치가 있습니다.
+
+왼쪽 뭉치에서 카드를 하나 뽑고 오른쪽 뭉치에서 카드를 하나 뽑아서, 두 수의 곱이 가장 크게 만들고 싶은데요. 어떻게 하면 가장 큰 곱을 구할 수 있을까요?
+
+함수 `max_product`는 리스트 `left_cards`와 리스트 `right_cards`를 파라미터로 받습니다.
+
+`left_cards`는 왼쪽 카드 뭉치의 숫자들, `right_cards`는 오른쪽 카드 뭉치 숫자들이 담겨 있고, `max_product`는 `left_cards`에서 카드 하나와 `right_cards`에서 카드 하나를 뽑아서 곱했을 때 그 값이 최대가 되는 값을 리턴합니다.
+</code></pre></div></div>
+
+<h4 id="코드">코드</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">max_product</span><span class="p">(</span><span class="n">left_cards</span><span class="p">,</span> <span class="n">right_cards</span><span class="p">):</span>
+    <span class="nb">max</span> <span class="o">=</span> <span class="n">left_cards</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">right_cards</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">left</span> <span class="ow">in</span> <span class="n">left_cards</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">right</span> <span class="ow">in</span> <span class="n">right_cards</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">max</span> <span class="o">&lt;</span> <span class="n">left</span> <span class="o">*</span> <span class="n">right</span> <span class="p">:</span> <span class="nb">max</span> <span class="o">=</span> <span class="n">left</span><span class="o">*</span><span class="n">right</span>
+    <span class="k">return</span> <span class="nb">max</span>
+</code></pre></div></div>
+
+<h3 id="divide-and-conquer분할-정복">Divide and Conquer(분할 정복)</h3>
+
+<p>​	한 문제를 부분 문제로 나누고, 그 부분문제들의 답을 이용하여 본래 문제의 답을 구하는 풀이방식이다. 보통 재귀함수의 방식을 통해 구현된다.</p>
+
+<h4 id="예제-1">예제</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>함수 `consecutive_sum`은 두 개의 정수 인풋 `start`와 `end`를 받고, `start`부터 `end`까지의 합을 리턴합니다. `end`는 `start`보다 크다고 가정합니다.
+</code></pre></div></div>
+
+<h4 id="코드-1">코드</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">consecutive_sum</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">start</span> <span class="o">==</span> <span class="n">end</span> <span class="p">:</span> <span class="k">return</span> <span class="n">end</span>
+    <span class="k">else</span> <span class="p">:</span>
+        <span class="k">return</span> <span class="n">consecutive_sum</span><span class="p">(</span><span class="n">start</span><span class="p">,(</span><span class="n">end</span><span class="o">+</span><span class="n">start</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="n">consecutive_sum</span><span class="p">((</span><span class="n">end</span><span class="o">+</span><span class="n">start</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">,</span> <span class="n">end</span><span class="p">)</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>병합 정렬과 퀵 정렬 역시 분할 정복의 일종이다.</p>
+</blockquote>
+
+<h3 id="dynamic-programming동적-할당">Dynamic Programming(동적 할당)</h3>
+
+<p>​	알고리즘 내에서 이미 한번이상 했던 작업을 반복하지 않도록 작성하는 방법이다. Tabulation과 Memorization으로 구분되며, 최적부분구조와 중복되는 부분문제 조건이 성립할때 사용하는 방식이다.</p>
+
+<ol>
+  <li>
+    <h4 id="tabulation">Tabulation</h4>
+
+    <p>보통 dp라고 명명하는 리스트를 만들어, 순차적으로 리스트 안 값들을 채워나가는 방식이다. 리스트 내에 연산 결과가 저장되므로, 중복연산을 하지 않게 된다.</p>
+
+    <h5 id="예제피보나치수열">예제(피보나치수열)</h5>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">fib_tab</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="c"># 이미 계산된 피보나치 수를 담는 리스트</span>
+    <span class="n">fib_table</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+
+    <span class="c"># n번째 피보나치 수까지 리스트를 하나씩 채워 나간다</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">fib_table</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fib_table</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">fib_table</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">2</span><span class="p">])</span>
+
+    <span class="c"># 피보나치 n번째 수를 리턴한다</span>
+    <span class="k">return</span> <span class="n">fib_table</span><span class="p">[</span><span class="n">n</span><span class="p">]</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <h4 id="memorize">Memorize</h4>
+
+    <p>한번 작업한 연산들의 결과를 cache(캐시)에 저장하여 다음 연산부터는 불러오는 방식이다.</p>
+
+    <h5 id="예제피보나치수열-1">예제(피보나치수열)</h5>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">fib_memo</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">cache</span><span class="o">=</span><span class="p">{}):</span>
+    <span class="c"># base case</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">1</span>
+
+    <span class="c"># 이미 n번째 피보나치를 계산했으면:</span>
+    <span class="c"># 저장된 값을 바로 리턴한다</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">cache</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">cache</span><span class="p">[</span><span class="n">n</span><span class="p">]</span>
+
+    <span class="c"># 아직 n번째 피보나치 수를 계산하지 않았으면:</span>
+    <span class="c"># 계산을 한 후 cache에 저장</span>
+    <span class="n">cache</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">=</span> <span class="n">fib_memo</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">cache</span><span class="p">)</span> <span class="o">+</span> <span class="n">fib_memo</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">2</span><span class="p">,</span> <span class="n">cache</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h3 id="greedy탐욕법">Greedy(탐욕법)</h3>
+
+<p>​	최적의 해가 아닌 적당한 정답만 있어도 될때 사용한다. 필수 조건은 존재하지 않지만, 부분최적구조와 탐욕적 선택속성을 만족할 경우 이 알고리즘으로 최적해	를 알아낼 수 있다.</p>
+
+<h5 id="예제-2">예제</h5>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	함수 `max_product`는 한 사람당 카드를 하나씩 뽑아서 모두 곱했을 때 가능한 최대 곱을 리턴합니다.
+
+	예시 : test_cards = [[1, 2, 3], [4, 6, 1], [8, 2, 4], [3, 2, 5], [5, 2, 3], [3, 2, 1]]
+</code></pre></div></div>
+
+<h5 id="코드-2">코드</h5>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">max_product</span><span class="p">(</span><span class="n">card_lists</span><span class="p">):</span>
+	<span class="n">answer</span> <span class="o">=</span> <span class="mi">1</span>
+	<span class="k">for</span> <span class="n">cards</span> <span class="ow">in</span> <span class="n">card_lists</span><span class="p">:</span>
+   		<span class="n">answer</span> <span class="o">*=</span> <span class="nb">max</span><span class="p">(</span><span class="n">cards</span><span class="p">)</span>
+	<span class="k">return</span> <span class="n">answer</span>
+</code></pre></div></div>
+<hr />
+
+<h1 id="객체지향-프로그래밍">객체지향 프로그래밍</h1>
+
+<h2 id="추상화">추상화</h2>
+
+<h2 id="캡슐화">캡슐화</h2>
+
+<p>변수와 함수를 하나의 단위로 묶는 것을 의미한다.</p>
+
+<h2 id="상속">상속</h2>
+
+<p>상속은 자식 클래스가 부모 클래스의 특성과 기능을 그대로 물려받는 것을 말한다. 기능의 일부분을 변경해야 할 경우 자식 클래스에서 상속받은 그 기능만을 수정해서 다시 정의하게 되는데, 이러한 작업을 ‘오버라이딩(Overriding)’이라고 한다. 상속은 캡슐화를 유지하면서도 클래스의 재사용이 용이하도록 해 준다.</p>
+
+<h2 id="다형성">다형성</h2>
+
+<p>하나의 변수, 또는 함수가 상황에 따라 다른 의미로 해석될 수 있는 것을 말한다</p>
+
+<h1 id="백준-문제-풀이">백준 문제 풀이</h1>
+
+<h1 id="1003">1003</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+
+    <span class="k">if</span> <span class="n">num</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"1 0"</span><span class="p">)</span>
+        <span class="k">continue</span>
+    <span class="n">fib</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">num</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"</span><span class="si">%</span><span class="s">d </span><span class="si">%</span><span class="s">d"</span> <span class="o">%</span><span class="p">(</span><span class="n">fib</span><span class="p">[</span><span class="n">num</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">fib</span><span class="p">[</span><span class="n">num</span><span class="p">]))</span>
+        <span class="k">continue</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">num</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="p">:</span>
+        <span class="n">fib</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fib</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">fib</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span>
+
+    <span class="k">print</span><span class="p">(</span><span class="s">"</span><span class="si">%</span><span class="s">d </span><span class="si">%</span><span class="s">d"</span> <span class="o">%</span><span class="p">(</span><span class="n">fib</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">],</span> <span class="n">fib</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
+</code></pre></div></div>
+
+<h1 id="1106">1106</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#Tabulation</span>
+<span class="n">C</span><span class="p">,</span> <span class="n">N</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+<span class="n">city</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+    <span class="n">price</span><span class="p">,</span><span class="n">people</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+    <span class="n">city</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="nb">tuple</span><span class="p">([</span><span class="n">price</span><span class="p">,</span> <span class="n">people</span><span class="p">])</span> <span class="p">)</span>
+
+
+<span class="n">dp</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">C</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">city</span><span class="p">))]</span>
+<span class="c">#print(dp)</span>
+
+<span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">C</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="n">dp</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">city</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span><span class="p">((</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">//</span><span class="n">city</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c">#print(dp[0])</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span>  <span class="nb">len</span><span class="p">(</span><span class="n">city</span><span class="p">)):</span>
+
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">C</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">need_people</span> <span class="o">=</span> <span class="n">j</span><span class="o">-</span><span class="n">city</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">need_people</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="p">:</span> <span class="n">need_people</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="p">],</span> <span class="n">city</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">need_people</span><span class="p">])</span>
+<span class="c">#print(dp)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="n">N</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">C</span><span class="p">])</span>
+</code></pre></div></div>
+
+<p>Dynamic프로그래밍 문제였으며, tabulation방식으로 dp를 채워나가며 해결하였다.</p>
+
+<h1 id="1267">1267</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">ceil</span>
+<span class="n">N</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="k">if</span> <span class="n">N</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="k">print</span><span class="p">(</span><span class="s">"Y M"</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+
+    <span class="n">times</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()))</span>
+
+    <span class="n">M</span> <span class="p">,</span><span class="n">Y</span> <span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span>
+
+    <span class="k">for</span> <span class="n">time</span> <span class="ow">in</span> <span class="n">times</span><span class="p">:</span>
+        <span class="n">Y</span> <span class="o">+=</span> <span class="n">ceil</span><span class="p">((</span><span class="n">time</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">/</span><span class="mi">30</span><span class="p">)</span> <span class="o">*</span> <span class="mi">10</span>
+        <span class="n">M</span> <span class="o">+=</span> <span class="n">ceil</span><span class="p">((</span><span class="n">time</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">/</span><span class="mi">60</span><span class="p">)</span> <span class="o">*</span> <span class="mi">15</span>
+
+    <span class="k">if</span> <span class="n">M</span> <span class="o">&gt;</span> <span class="n">Y</span> <span class="p">:</span> <span class="k">print</span><span class="p">(</span><span class="s">"Y"</span><span class="p">,</span> <span class="n">Y</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">Y</span> <span class="o">&gt;</span> <span class="n">M</span> <span class="p">:</span> <span class="k">print</span><span class="p">(</span><span class="s">"M"</span><span class="p">,</span> <span class="n">M</span><span class="p">)</span>
+    <span class="k">else</span> <span class="p">:</span> <span class="k">print</span><span class="p">(</span><span class="s">"Y M"</span><span class="p">,</span> <span class="n">M</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h1 id="2579">2579</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">N</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+
+
+<span class="n">stairs</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">)]</span>
+
+<span class="n">dp</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span>
+
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+    <span class="c">#basecase</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="n">dp</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">stairs</span><span class="p">[:</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span>
+    <span class="k">else</span> <span class="p">:</span>
+        <span class="n">dp</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="n">n</span><span class="o">-</span><span class="mi">2</span><span class="p">],</span> <span class="n">dp</span><span class="p">[</span><span class="n">n</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span> <span class="o">+</span> <span class="n">stairs</span><span class="p">[</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">+</span> <span class="n">stairs</span><span class="p">[</span><span class="n">n</span><span class="p">]</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</code></pre></div></div>
+
+<h1 id="2630">2630</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">counting</span><span class="p">(</span><span class="n">Square</span><span class="p">):</span>
+    <span class="s">"""
+    basecase : 정사각형 요소가 모두 한개로 통일 되어있다면, 그 수에 따라 결과값을 리턴한다
+    1. 정사각형을 4등분으로 쪼갠다
+    2. 각각의 쪼갠 사각형에 counting을 적용한다
+    3. 카운팅으로 모인 수들을 더해서 return 한다
+    """</span>
+    <span class="n">No1</span> <span class="o">=</span> <span class="bp">False</span>
+    <span class="n">No0</span> <span class="o">=</span> <span class="bp">False</span>
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">Square</span><span class="p">:</span>
+        <span class="k">if</span> <span class="mi">1</span> <span class="ow">in</span> <span class="n">line</span> <span class="p">:</span> <span class="n">No1</span> <span class="o">=</span> <span class="bp">True</span>
+        <span class="k">if</span> <span class="mi">0</span> <span class="ow">in</span> <span class="n">line</span> <span class="p">:</span> <span class="n">No0</span> <span class="o">=</span> <span class="bp">True</span>
+
+    <span class="k">if</span> <span class="n">No1</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">No0</span> <span class="p">:</span> <span class="k">return</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">No1</span> <span class="ow">and</span> <span class="n">No0</span> <span class="p">:</span> <span class="k">return</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
+    <span class="c">#여기까지 basecase</span>
+
+    <span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">Square</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">length</span> <span class="o">//</span> <span class="mi">2</span>
+
+    <span class="n">Square1</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">Square2</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">Square3</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">Square4</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+        <span class="n">Square1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Square</span><span class="p">[</span><span class="n">i</span><span class="p">][:</span><span class="n">x</span><span class="p">])</span>
+        <span class="n">Square2</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Square</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">x</span><span class="p">:])</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">length</span><span class="p">):</span>
+        <span class="n">Square3</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Square</span><span class="p">[</span><span class="n">i</span><span class="p">][:</span><span class="n">x</span><span class="p">])</span>
+        <span class="n">Square4</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Square</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">x</span><span class="p">:])</span>
+    <span class="c">#쪼개기 완료</span>
+
+    <span class="n">count1</span><span class="p">,</span> <span class="n">count2</span><span class="p">,</span> <span class="n">count3</span><span class="p">,</span> <span class="n">count4</span> <span class="o">=</span> <span class="n">counting</span><span class="p">(</span><span class="n">Square1</span><span class="p">),</span> <span class="n">counting</span><span class="p">(</span><span class="n">Square2</span><span class="p">),</span> <span class="n">counting</span><span class="p">(</span><span class="n">Square3</span><span class="p">),</span> <span class="n">counting</span><span class="p">(</span><span class="n">Square4</span><span class="p">)</span>
+
+    <span class="n">num_of_Zero</span> <span class="o">=</span> <span class="n">count1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">count2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">count3</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">count4</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">num_of_One</span> <span class="o">=</span> <span class="n">count1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">count2</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">count3</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">count4</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+
+    <span class="k">return</span><span class="p">([</span><span class="n">num_of_Zero</span><span class="p">,</span> <span class="n">num_of_One</span><span class="p">])</span>
+
+
+<span class="n">N</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+
+<span class="n">shape</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+    <span class="n">shape</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())))</span>
+
+<span class="n">answer</span> <span class="o">=</span> <span class="n">counting</span><span class="p">(</span><span class="n">shape</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">answer</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="n">answer</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</code></pre></div></div>
+
+<h1 id="11060">11060</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">N</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+
+<span class="n">values</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()))</span>
+
+<span class="n">spot</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="o">-</span><span class="mi">1</span><span class="p">)]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="o">+</span><span class="n">values</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">j</span> <span class="o">&gt;=</span> <span class="n">N</span> <span class="p">:</span> <span class="k">break</span>
+        <span class="k">if</span> <span class="n">spot</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span> <span class="ow">and</span> <span class="n">spot</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span> <span class="p">:</span> <span class="n">spot</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">spot</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="k">else</span> <span class="p">:</span>
+            <span class="n">spot</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">spot</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">spot</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">spot</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</code></pre></div></div>
+
+<h1 id="12852">12852</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">N</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+
+<span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span>
+<span class="n">Path</span> <span class="o">=</span> <span class="p">[[]</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span>
+
+<span class="n">Path</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="p">:</span>
+
+    <span class="n">can</span> <span class="o">=</span> <span class="p">[</span><span class="n">N</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)]</span>
+
+    <span class="n">Div2</span> <span class="o">=</span> <span class="n">num</span><span class="o">%</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span>
+    <span class="n">Div3</span> <span class="o">=</span> <span class="n">num</span><span class="o">%</span><span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span>
+
+    <span class="k">if</span> <span class="n">Div2</span> <span class="p">:</span> <span class="n">can</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">numbers</span><span class="p">[</span><span class="n">num</span><span class="o">//</span><span class="mi">2</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">Div3</span> <span class="p">:</span> <span class="n">can</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">numbers</span><span class="p">[</span><span class="n">num</span><span class="o">//</span><span class="mi">3</span><span class="p">]</span>
+    <span class="n">can</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">numbers</span><span class="p">[</span><span class="n">num</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+    <span class="n">Minimal</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">can</span><span class="p">)</span>
+
+    <span class="n">idx</span> <span class="o">=</span> <span class="n">can</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">Minimal</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">idx</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">:</span> <span class="n">Path</span><span class="p">[</span><span class="n">num</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">num</span><span class="p">]</span> <span class="o">+</span> <span class="n">Path</span><span class="p">[</span><span class="n">num</span><span class="o">//</span><span class="mi">2</span><span class="p">]</span>
+    <span class="k">elif</span> <span class="n">idx</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">:</span> <span class="n">Path</span><span class="p">[</span><span class="n">num</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">num</span><span class="p">]</span> <span class="o">+</span> <span class="n">Path</span><span class="p">[</span><span class="n">num</span><span class="o">//</span><span class="mi">3</span><span class="p">]</span>
+    <span class="k">else</span> <span class="p">:</span> <span class="n">Path</span><span class="p">[</span><span class="n">num</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">num</span><span class="p">]</span> <span class="o">+</span>  <span class="n">Path</span><span class="p">[</span><span class="n">num</span><span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
+    <span class="n">numbers</span><span class="p">[</span><span class="n">num</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">Minimal</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">[</span><span class="n">N</span><span class="p">])</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">Path</span><span class="p">[</span><span class="n">N</span><span class="p">]</span> <span class="p">:</span> <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="s">' '</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h1 id="12865">12865</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">N</span><span class="p">,</span> <span class="n">K</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+<span class="nb">object</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+    <span class="n">w</span><span class="p">,</span><span class="n">v</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+    <span class="nb">object</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="nb">tuple</span><span class="p">([</span><span class="n">w</span><span class="p">,</span> <span class="n">v</span><span class="p">])</span> <span class="p">)</span>
+
+
+<span class="n">dp</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">K</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span>
+<span class="c">#print(dp)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="nb">object</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">:</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">K</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+            <span class="k">if</span> <span class="nb">object</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">j</span> <span class="p">:</span> <span class="n">dp</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="k">else</span> <span class="p">:</span> <span class="n">dp</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="nb">object</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">K</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+            <span class="k">if</span> <span class="nb">object</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">j</span><span class="p">:</span> <span class="n">dp</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">dp</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">j</span><span class="p">]</span>
+            <span class="k">else</span> <span class="p">:</span>
+                <span class="n">dp</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">j</span><span class="p">],</span> <span class="nb">object</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">dp</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">j</span><span class="o">-</span><span class="nb">object</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]])</span>
+
+    <span class="n">dp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">dp</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">dp</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">K</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</code></pre></div></div>
+
+<h1 id="18222">18222</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">idx</span><span class="p">(</span><span class="n">k</span><span class="p">):</span>
+    <span class="c">#basecase : k == 1</span>
+    <span class="k">if</span> <span class="n">k</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">:</span>
+        <span class="k">return</span> <span class="mi">0</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">n</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+            <span class="k">if</span> <span class="mi">2</span><span class="o">**</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">k</span> <span class="o">&lt;=</span> <span class="mi">2</span><span class="o">**</span><span class="n">n</span> <span class="p">:</span> <span class="k">break</span>
+            <span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="n">index</span> <span class="o">=</span> <span class="n">k</span><span class="o">-</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+        <span class="c">#print(index)</span>
+        <span class="k">return</span> <span class="mi">1</span><span class="o">-</span><span class="n">idx</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>
+
+<span class="n">k</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">idx</span><span class="p">(</span><span class="n">k</span><span class="p">))</span>
+</code></pre></div></div>
