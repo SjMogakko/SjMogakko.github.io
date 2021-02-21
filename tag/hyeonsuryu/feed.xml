@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="/tag/hyeonsuryu/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/" rel="alternate" type="text/html" />
-  <updated>2021-02-21T21:26:20+09:00</updated>
+  <updated>2021-02-21T22:46:35+09:00</updated>
   <id>/tag/hyeonsuryu/feed.xml</id>
 
   
@@ -46,164 +46,74 @@
 
   
     <entry>
-      <title type="html">마크다운 문법</title>
-      <link href="/markdown-syntax" rel="alternate" type="text/html" title="마크다운 문법" />
-      <published>2020-12-03T08:03:00+09:00</published>
-      <updated>2020-12-03T08:03:00+09:00</updated>
-      <id>/markdown-syntax</id>
-      <content type="html" xml:base="/markdown-syntax">&lt;p&gt;#헤더&lt;/p&gt;
-&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gh&quot;&gt;# header 1&lt;/span&gt;
-&lt;span class=&quot;gu&quot;&gt;## header 2&lt;/span&gt;
-&lt;span class=&quot;gu&quot;&gt;### header 3&lt;/span&gt;
-&lt;span class=&quot;gu&quot;&gt;#### header 4&lt;/span&gt;
-&lt;span class=&quot;gu&quot;&gt;##### header 5&lt;/span&gt;
-&lt;span class=&quot;gu&quot;&gt;###### header 6&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+      <title type="html">모각코 첫주 활동 정리</title>
+      <link href="/first-week" rel="alternate" type="text/html" title="모각코 첫주 활동 정리" />
+      <published>2021-02-21T22:30:00+09:00</published>
+      <updated>2021-02-21T22:30:00+09:00</updated>
+      <id>/first-week</id>
+      <content type="html" xml:base="/first-week">&lt;h1 id=&quot;월요일&quot;&gt;월요일&lt;/h1&gt;
+&lt;p&gt; 월요일은 모각코 첫 활동일로 활동 방법을 소개하고 공부 목표를 세웠다. 나는 다른 사람과 함께 알고리즘을 공부하기로 하였다. 공부하고자 하는 알고리즘을 정하여 몇개의 문제를 뽑아 각자 문제를 풀어오고 모각코 활동 시간동안 서로의 풀이를 보고 개선 방안 등을 이야기하기로 하였다.&lt;/p&gt;
 
-&lt;h1 id=&quot;header-1&quot;&gt;header 1&lt;/h1&gt;
-&lt;h2 id=&quot;header-2&quot;&gt;header 2&lt;/h2&gt;
-&lt;h3 id=&quot;header-3&quot;&gt;header 3&lt;/h3&gt;
-&lt;h4 id=&quot;header-4&quot;&gt;header 4&lt;/h4&gt;
-&lt;h5 id=&quot;header-5&quot;&gt;header 5&lt;/h5&gt;
-&lt;h6 id=&quot;header-6&quot;&gt;header 6&lt;/h6&gt;
-
-&lt;h1 id=&quot;글꼴&quot;&gt;글꼴&lt;/h1&gt;
-&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;ge&quot;&gt;*italics*&lt;/span&gt;
-&lt;span class=&quot;ge&quot;&gt;_italics_&lt;/span&gt;
-
-&lt;span class=&quot;gs&quot;&gt;**bold**&lt;/span&gt;
-&lt;span class=&quot;gs&quot;&gt;__bold__&lt;/span&gt;
-
-&lt;span class=&quot;gs&quot;&gt;**_italics and bold_**&lt;/span&gt;
-&lt;span class=&quot;gs&quot;&gt;__*italics and bold*__&lt;/span&gt;
-
-~~strike through~~
-
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;u&amp;gt;&lt;/span&gt;underlining&lt;span class=&quot;nt&quot;&gt;&amp;lt;/u&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;em&gt;italics&lt;/em&gt;
-&lt;em&gt;italics&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;bold&lt;/strong&gt;
-&lt;strong&gt;bold&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;italics and bold&lt;/em&gt;&lt;/strong&gt;
-&lt;strong&gt;&lt;em&gt;italics and bold&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;del&gt;strike through&lt;/del&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;u&gt;underlining&lt;/u&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;리스트&quot;&gt;리스트&lt;/h1&gt;
-&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;1.&lt;/span&gt; A
-&lt;span class=&quot;p&quot;&gt;1.&lt;/span&gt; B
-&lt;span class=&quot;p&quot;&gt;  -&lt;/span&gt; a
-&lt;span class=&quot;p&quot;&gt;  -&lt;/span&gt; b
-&lt;span class=&quot;p&quot;&gt;  -&lt;/span&gt; c
-&lt;span class=&quot;p&quot;&gt;1.&lt;/span&gt; C
-&lt;span class=&quot;p&quot;&gt;  -&lt;/span&gt; a
-&lt;span class=&quot;p&quot;&gt;  -&lt;/span&gt; b
-&lt;span class=&quot;p&quot;&gt;  *&lt;/span&gt; c
-&lt;span class=&quot;p&quot;&gt;  +&lt;/span&gt; d
-&lt;span class=&quot;p&quot;&gt;1.&lt;/span&gt; D
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
+&lt;h1 id=&quot;화요일&quot;&gt;화요일&lt;/h1&gt;
+&lt;h2 id=&quot;dynamic-programming&quot;&gt;Dynamic Programming&lt;/h2&gt;
+&lt;h3 id=&quot;boj-12865&quot;&gt;BOJ 12865&lt;/h3&gt;
 &lt;ol&gt;
-  &lt;li&gt;A&lt;/li&gt;
-  &lt;li&gt;B
+  &lt;li&gt;문제 내용
     &lt;ul&gt;
-      &lt;li&gt;a&lt;/li&gt;
-      &lt;li&gt;b&lt;/li&gt;
-      &lt;li&gt;c&lt;/li&gt;
+      &lt;li&gt;0-1 knapsack 문제&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;C
+  &lt;li&gt;접근
     &lt;ul&gt;
-      &lt;li&gt;a&lt;/li&gt;
-      &lt;li&gt;b&lt;/li&gt;
-      &lt;li&gt;c&lt;/li&gt;
-      &lt;li&gt;d&lt;/li&gt;
+      &lt;li&gt;각 물건을 골랐을 때와 안 골랐을 때를 나눠 모든 경우의 수를 구하려고 시도함&lt;/li&gt;
+      &lt;li&gt;물건의 개수가 n일 때 2^n 가지의 경우가 나와 제한 시간 안에 구할 수 없음&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;D&lt;/li&gt;
+  &lt;li&gt;찾은 풀이 방법
+    &lt;ul&gt;
+      &lt;li&gt;각 물건을 넣을 때와 안 넣었을 때 최선의 선택을 찾음&lt;/li&gt;
+      &lt;li&gt;이전에 구한 최선의 선택을 이용하여 이후 선택에서도 최선의 선택을 쉽게 구할 수 있게 함 (타블레이션)&lt;/li&gt;
+      &lt;li&gt;시간이 8000ms로 줄었지만 메모리가 약 220MB가 사용됨&lt;/li&gt;
+      &lt;li&gt;추가 조사를 통하여 일정한 크기의 범위의 데이터를 처리할 경우 바로 직전 데이터를 남겨두어 이후 계산을 빠르게 하도록 하는 방법인 슬라이딩 윈도우 기법을 알게 됨&lt;/li&gt;
+      &lt;li&gt;타블레이션을 통하여 문제를 풀 때 현재 행을 계산하기 위해서 바로 직전 행만 필요하다는 점을 이용하여 두개의 행만 메모리에 남겨두는 방법으로 슬라이딩 윈도우를 적용함&lt;/li&gt;
+      &lt;li&gt;결과적으로 메모리 사용량이 36MB로 줄었고 메모리 접근 시간을 줄여 실행 속도 또한 6600ms로 빨라짐&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;추가 공부 내용
+    &lt;ul&gt;
+      &lt;li&gt;슬라이딩 윈도우&lt;/li&gt;
+      &lt;li&gt;투 포인트 알고리즘&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&quot;링크-삽입&quot;&gt;링크 삽입&lt;/h1&gt;
-&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;hyeonsuryu.github.io&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;https://hyeonsuryu.github.io&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;h3 id=&quot;boj-1106&quot;&gt;BOJ 1106&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;문제 내용
+    &lt;ul&gt;
+      &lt;li&gt;0-1 knapsack 문제에서 목표 만족도를 달성하기 위한 최소 비용을 요구하는 문제&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;접근
+    &lt;ul&gt;
+      &lt;li&gt;12865번 문제에 적용한 내용을 이용하여 K를 하나씩 늘려가며 목표값이 나올 때의 K를 구하고자 함&lt;/li&gt;
+      &lt;li&gt;적용에 실패했고, 이후에 다시 풀어볼 예정&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;hyeonsuryu.github.io&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;https://hyeonsuryu.github.io&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;&quot;link description&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h1 id=&quot;수요일&quot;&gt;수요일&lt;/h1&gt;
+&lt;p&gt;  불참&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://hyeonsuryu.github.io&quot;&gt;hyeonsuryu.github.io&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;목요일&quot;&gt;목요일&lt;/h1&gt;
+&lt;p&gt;  불참&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://hyeonsuryu.github.io&quot; title=&quot;link description&quot;&gt;hyeonsuryu.github.io&lt;/a&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;이미지-삽입&quot;&gt;이미지 삽입&lt;/h1&gt;
-&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;![&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;alternative text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;https://hyeonsuryu.github.io/assets/images/grapes.jpg&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;&quot;link description&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;{: width=&quot;50%&quot; height=&quot;50%&quot;} #%기호 없이 픽셀 단위 가능
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://hyeonsuryu.github.io/assets/images/grapes.jpg&quot; alt=&quot;alternative text&quot; title=&quot;link description&quot; width=&quot;50%&quot; height=&quot;50%&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;표&quot;&gt;표&lt;/h1&gt;
-&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;A | B | C | D
-:---|---:|:---:|---
-a | b | c | d
-ㄱ | ㄴ | ㄷ | ㄹ
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;A&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;B&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;C&lt;/th&gt;
-      &lt;th&gt;D&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;a&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;b&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;c&lt;/td&gt;
-      &lt;td&gt;d&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;ㄱ&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;ㄴ&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;ㄷ&lt;/td&gt;
-      &lt;td&gt;ㄹ&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h1 id=&quot;인용구&quot;&gt;인용구&lt;/h1&gt;
-&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gt&quot;&gt;&amp;gt;quote&lt;/span&gt;
-&lt;span class=&quot;gt&quot;&gt;&amp;gt;quote&lt;/span&gt;
-
---
-&lt;span class=&quot;gt&quot;&gt;&amp;gt;quote&lt;/span&gt;
-&lt;span class=&quot;gt&quot;&gt;&amp;gt;&amp;gt;quote&lt;/span&gt;
-&lt;span class=&quot;gt&quot;&gt;&amp;gt;&amp;gt;&amp;gt;quote&lt;/span&gt;
-&lt;span class=&quot;gt&quot;&gt;&amp;gt;&amp;gt;&amp;gt;quote&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;quote
-quote&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;–&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;quote&lt;/p&gt;
-  &lt;blockquote&gt;
-    &lt;p&gt;quote&lt;/p&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;quote
-quote&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;</content>
+&lt;h1 id=&quot;금요일&quot;&gt;금요일&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;블로그 관련 내용 공지&lt;/li&gt;
+  &lt;li&gt;깃허브 사용법 정리&lt;/li&gt;
+  &lt;li&gt;MySQL 공부&lt;/li&gt;
+&lt;/ul&gt;</content>
 
       
       
@@ -220,11 +130,11 @@ quote&lt;/p&gt;
       
 
       
-        <category term="HyeonsuRyu" />
+        <category term="hyeonsuryu" />
       
 
       
-        <summary type="html">#헤더 # header 1 ## header 2 ### header 3 #### header 4 ##### header 5 ###### header 6</summary>
+        <summary type="html">월요일  월요일은 모각코 첫 활동일로 활동 방법을 소개하고 공부 목표를 세웠다. 나는 다른 사람과 함께 알고리즘을 공부하기로 하였다. 공부하고자 하는 알고리즘을 정하여 몇개의 문제를 뽑아 각자 문제를 풀어오고 모각코 활동 시간동안 서로의 풀이를 보고 개선 방안 등을 이야기하기로 하였다.</summary>
       
 
       
