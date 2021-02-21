@@ -8,19 +8,6 @@
     
       
       <item>
-        <title></title>
-        
-          <description></description>
-        
-        <pubDate>Sun, 21 Feb 2021 21:22:39 +0900</pubDate>
-        <link>
-        /2021-02-21-first</link>
-        <guid isPermaLink="true">/2021-02-21-first</guid>
-      </item>
-      
-    
-      
-      <item>
         <title>First week of Mogakco</title>
         
           <description>&lt;!--큰 따옴표로 묶인 내용 수정, 따옴표는 삭제--&gt;
@@ -54,6 +41,21 @@ seongeun
         <link>
         /First-Markdown(basic)</link>
         <guid isPermaLink="true">/First-Markdown(basic)</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>2월 3주차 내용 정리</title>
+        
+          <description>&lt;h1 id=&quot;알고리즘&quot;&gt;알고리즘&lt;/h1&gt;
+
+</description>
+        
+        <pubDate>Sun, 21 Feb 2021 00:00:01 +0900</pubDate>
+        <link>
+        /first</link>
+        <guid isPermaLink="true">/first</guid>
       </item>
       
     

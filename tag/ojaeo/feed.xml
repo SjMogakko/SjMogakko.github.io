@@ -1,225 +1,57 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-02-21T21:26:20+09:00</updated><id>/</id><title type="html">SjMogakko.github.io</title><subtitle>세종대 새내기 모각코</subtitle><entry><title type="html">First week of Mogakco</title><link href="/First-Markdown(basic)" rel="alternate" type="text/html" title="First week of Mogakco" /><published>2021-02-21T18:00:00+09:00</published><updated>2021-02-21T18:00:00+09:00</updated><id>/First-Markdown(basic)</id><content type="html" xml:base="/First-Markdown(basic)">&lt;!--큰 따옴표로 묶인 내용 수정, 따옴표는 삭제--&gt;
-&lt;!-- tag 목록
-Hayeon
-hyeonsuryu
-Hyeonuk
-Jiwon
-Minsung
-Ojaeo
-Seohyun
-Seongeun
---&gt;
-&lt;!-- author 목록
-hayeon
-hyeonsu
-hyeonuk
-jiwon
-minsung
-ojaeo
-seohyun
-seongeun
----&gt;
-&lt;!--&amp;nbsp;(공백생성)--&gt;
-&lt;h1 id=&quot;sejong-universityseoulsouth-korea&quot;&gt;&lt;strong&gt;SEJONG UNIVERSITY,SEOUL,SOUTH KOREA&lt;/strong&gt;&lt;/h1&gt;
-&lt;h5 id=&quot;-science-in-mechanical-and-aerospace-engineering&quot;&gt;&lt;strong&gt;-Science in Mechanical and Aerospace Engineering&lt;/strong&gt;&lt;/h5&gt;
+<?xml version="1.0" encoding="utf-8"?>
 
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;I’m shinhyeonuk.&lt;/strong&gt;&lt;br /&gt;
-email-&lt;a href=&quot;mailto:shinhyeonuk1225@naver.com&quot;&gt;shinhyeonuk1225@naver.com&lt;/a&gt;,&lt;a href=&quot;mailto:foot1225@naver.com&quot;&gt;foot1225@naver.com&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
+  <link href="/tag/ojaeo/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="/" rel="alternate" type="text/html" />
+  <updated>2021-02-21T21:26:20+09:00</updated>
+  <id>/tag/ojaeo/feed.xml</id>
 
-&lt;ul&gt;
-  &lt;li&gt;headfiles
-    &lt;ul&gt;
-      &lt;li&gt;#include &lt;stdio.h&gt; (standard,input,output)&lt;/stdio.h&gt;&lt;/li&gt;
-      &lt;li&gt;#include &lt;stdlib.h&gt; (난수,malloc(memory allocate),free등등)&lt;/stdlib.h&gt;&lt;/li&gt;
-      &lt;li&gt;#include &lt;time.h&gt;&lt;/time.h&gt;&lt;/li&gt;
-      &lt;li&gt;#include &lt;math.h&gt;&lt;/math.h&gt;&lt;/li&gt;
-      &lt;li&gt;#include &lt;stdbool.h&gt; (false,true)&lt;/stdbool.h&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+  
+  
+  
 
-&lt;blockquote&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;strong&gt;FInal Goal&lt;/strong&gt;
-      &lt;ul&gt;
-        &lt;li&gt;Will be determined after we learn more&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Now&lt;/strong&gt;
-      &lt;ul&gt;
-        &lt;li&gt;FInish Basic C in one and  a half month&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;C언어 입문 &lt;a href=&quot;https://dojang.io/course/view.php?id=2&quot;&gt;코딩도장&lt;/a&gt;&lt;/strong&gt;
-      &lt;ul&gt;
-        &lt;li&gt;Unit 1~Unit 37 (except somethings hard to understand)&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/blockquote&gt;
+  
+    <title type="html">SjMogakko.github.io | </title>
+  
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h3 id=&quot;declaring-variables&quot;&gt;Declaring Variables&lt;/h3&gt;
-    &lt;ul&gt;
-      &lt;li&gt;character(1byte)
-        &lt;blockquote&gt;
-          &lt;p&gt;char (name);&lt;/p&gt;
-        &lt;/blockquote&gt;
-      &lt;/li&gt;
-      &lt;li&gt;integer(4byte)
-        &lt;blockquote&gt;
-          &lt;p&gt;int (name);&lt;/p&gt;
-        &lt;/blockquote&gt;
-      &lt;/li&gt;
-      &lt;li&gt;실수형태 double(8byte),float(4byte)
-        &lt;blockquote&gt;
-          &lt;p&gt;double (name);&lt;br /&gt;
-  float (name);
-  flat (name)=(number)f&lt;/p&gt;
-        &lt;/blockquote&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h3 id=&quot;input-scanf입력name-and-output-printf출력name&quot;&gt;Input [Scanf(“입력”,&amp;amp;(name))] and Output [Printf(“출력”,name)]&lt;/h3&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+  
+    <subtitle>세종대 새내기 모각코</subtitle>
+  
 
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;형태&lt;/th&gt;
-      &lt;th&gt;입력&lt;/th&gt;
-      &lt;th&gt;출력&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;char&lt;/td&gt;
-      &lt;td&gt;“%c”&lt;/td&gt;
-      &lt;td&gt;“%c”(단어) OR “%d”(아스키)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;int&lt;/td&gt;
-      &lt;td&gt;“%d”&lt;/td&gt;
-      &lt;td&gt;“%d”&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;double&lt;/td&gt;
-      &lt;td&gt;“%lf”&lt;/td&gt;
-      &lt;td&gt;“%f”&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;float&lt;/td&gt;
-      &lt;td&gt;“%f”&lt;/td&gt;
-      &lt;td&gt;“%f”&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+  
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h3 id=&quot;condional-statement조건문&quot;&gt;Condional Statement(조건문)&lt;/h3&gt;
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;blockquote&gt;
-          &lt;p&gt;if(조건문){&lt;br /&gt;
-실행문&lt;br /&gt;
-}&lt;/p&gt;
-        &lt;/blockquote&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h3 id=&quot;loop-statement반복문&quot;&gt;Loop Statement(반복문)&lt;/h3&gt;
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;blockquote&gt;
-          &lt;p&gt;while(조건문){&lt;br /&gt;
-실행문&lt;br /&gt;
-}&lt;/p&gt;
-        &lt;/blockquote&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;blockquote&gt;
-          &lt;p&gt;for(Variable;조건문;실행문){&lt;br /&gt;
-실행문&lt;br /&gt;
-}&lt;/p&gt;
-        &lt;/blockquote&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;blockquote&gt;
-          &lt;p&gt;do{&lt;br /&gt;
-실행문&lt;br /&gt;
-}(while(조건문)) “while문과는다르게 적어도 한번 무조건 실행”&lt;/p&gt;
-        &lt;/blockquote&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h3 id=&quot;operators연산자&quot;&gt;Operators(연산자)&lt;/h3&gt;
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;blockquote&gt;
-          &lt;p&gt;And =&amp;gt; &amp;amp;&amp;amp;&lt;/p&gt;
-        &lt;/blockquote&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;blockquote&gt;
-          &lt;table&gt;
-            &lt;tbody&gt;
-              &lt;tr&gt;
-                &lt;td&gt;Or =&amp;gt;&lt;/td&gt;
-                &lt;td&gt; &lt;/td&gt;
-              &lt;/tr&gt;
-            &lt;/tbody&gt;
-          &lt;/table&gt;
-        &lt;/blockquote&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;blockquote&gt;
-          &lt;p&gt;Not =&amp;gt; !&lt;/p&gt;
-        &lt;/blockquote&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h3 id=&quot;array배열&quot;&gt;Array(배열)&lt;/h3&gt;
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;blockquote&gt;
-          &lt;p&gt;1 dimension array(1차원)&lt;/p&gt;
-        &lt;/blockquote&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
 
-    &lt;p&gt;int name[size]={V[0],V[1],V[2]….,V[size-1]}  &lt;strong&gt;&amp;lt;–index Start from 0&lt;/strong&gt;&lt;/p&gt;
+  
+  
 
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;blockquote&gt;
-          &lt;p&gt;2 dimension array(2차원)&lt;/p&gt;
-        &lt;/blockquote&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;p&gt;int name[column(세로크기)][row(가로크기)]={&lt;br /&gt;
-    {V[0][0], V[0][1], … V[0][row-1]},&lt;br /&gt;
-    {},&lt;br /&gt;
-    ….&lt;br /&gt;
-    {V[column-1][0], V[column-1][1],….., V[column-1][row-1]} &lt;br /&gt;
-}&lt;/p&gt;
-
-    &lt;hr /&gt;
-    &lt;p&gt;Because i have learned C a little before starting mogakco, this time writing becomes quite long.&lt;br /&gt;
-  It was my First time to use computer instead of Gaming.&lt;br /&gt;
-  Cause my Department would not use programming as much as Physics and Math,  mogakco’s teammates will stay ahead of me.&lt;br /&gt;
-  But i would try hard!&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>hyeounuk</name></author><category term="Hyeonuk" /><summary type="html">SEJONG UNIVERSITY,SEOUL,SOUTH KOREA -Science in Mechanical and Aerospace Engineering</summary></entry><entry><title type="html">2월 3주차 내용 정리</title><link href="/first" rel="alternate" type="text/html" title="2월 3주차 내용 정리" /><published>2021-02-21T00:00:01+09:00</published><updated>2021-02-21T00:00:01+09:00</updated><id>/first</id><content type="html" xml:base="/first">&lt;h1 id=&quot;알고리즘&quot;&gt;알고리즘&lt;/h1&gt;
+  
+    <entry>
+      <title type="html">2월 3주차 내용 정리</title>
+      <link href="/first" rel="alternate" type="text/html" title="2월 3주차 내용 정리" />
+      <published>2021-02-21T00:00:01+09:00</published>
+      <updated>2021-02-21T00:00:01+09:00</updated>
+      <id>/first</id>
+      <content type="html" xml:base="/first">&lt;h1 id=&quot;알고리즘&quot;&gt;알고리즘&lt;/h1&gt;
 
 &lt;h2 id=&quot;탐색-알고리즘&quot;&gt;탐색 알고리즘&lt;/h2&gt;
 
@@ -760,242 +592,32 @@ email-&lt;a href=&quot;mailto:shinhyeonuk1225@naver.com&quot;&gt;shinhyeonuk1225
 &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
 
 &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Ojaeo</name></author><category term="Ojaeo" /><summary type="html">알고리즘</summary></entry><entry><title type="html">2021-02-20 백하연</title><link href="/realhayeon" rel="alternate" type="text/html" title="2021-02-20 백하연" /><published>2021-02-20T23:13:00+09:00</published><updated>2021-02-20T23:13:00+09:00</updated><id>/realhayeon</id><content type="html" xml:base="/realhayeon">&lt;h1 id=&quot;feb_third-week&quot;&gt;Feb_third week&lt;/h1&gt;
-&lt;h2 id=&quot;goal&quot;&gt;Goal&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;C포자를 위한=&quot;&quot; C언어=&quot;&quot;&gt;. p117-p176(변수,printf,연산자,형변환)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
 
+      
+      
+      
+      
+      
 
-&lt;/C포자를&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Do it! C언어 입문 Youtube 강의 매일 1강씩 듣기
-https://youtu.be/-JNTP5D8-1A&lt;/p&gt;
+      <author>
+          <name>Ojaeo</name>
+        
+        
+      </author>
 
-    &lt;p&gt;2-1. 3강 12:56 bit/byte 공부하기
- &lt;img src=&quot;https://user-images.githubusercontent.com/70383140/108599750-6a62fd80-73d6-11eb-937d-8748ebf65619.jpg&quot; alt=&quot;doit_bit&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;C언어 코딩=&quot;&quot; 도장=&quot;&quot;&gt;. p60-p148
-![coding_dojang](https://user-images.githubusercontent.com/70383140/108599609-87e39780-73d5-11eb-8b73-9c6730edbb0c.jpg){:width=48 height=38}
-- Unit 3 (문자열, 서식지정자)
-- Unit 4 (세미콜론, 주석,중괄호, 들여쓰기)
-- Unit 5, Unit 6 (변수선언, 중단점)
-- Unit 7, Unit 8 (정수/실수형 변수, 오버/언더플로우, 자료형 크기, 최소/최대)
+      
 
+      
+        <category term="Ojaeo" />
+      
 
+      
+        <summary type="html">알고리즘</summary>
+      
 
-
-&lt;/C언어&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;fullfill&quot;&gt;Fullfill&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;C포자를 위한=&quot;&quot; C언어=&quot;&quot;&gt;. p117-?(변수)
-&lt;/C포자를&gt;
-  &lt;/li&gt;
-  &lt;li&gt;매일x
-1강~3강(3강 bit,byte 부호 있는/없는 자료형 해석 이해하는데 어려웠음.)&lt;/li&gt;
-  &lt;li&gt;성공.+코딩도장 사이트에서 퀴즈 풀기&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;supplement&quot;&gt;Supplement&lt;/h2&gt;
-&lt;p&gt;Like all other events, it’s my defect.
-Please don’t work hard at JUST first time…..and do constantly.
-So my next week’s goal is …..finishing  &amp;lt;C언어 코딩 도장 1&amp;gt; and make python_project(same at the Youtube https://youtu.be/Dkx8Pl6QKW0)&lt;/p&gt;</content><author><name>hayeonBaek</name></author><category term="Hayeon" /><summary type="html">Feb_third week Goal . p117-p176(변수,printf,연산자,형변환)</summary></entry><entry><title type="html">마크다운 문법</title><link href="/markdown-syntax" rel="alternate" type="text/html" title="마크다운 문법" /><published>2020-12-03T08:03:00+09:00</published><updated>2020-12-03T08:03:00+09:00</updated><id>/markdown-syntax</id><content type="html" xml:base="/markdown-syntax">&lt;p&gt;#헤더&lt;/p&gt;
-&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gh&quot;&gt;# header 1&lt;/span&gt;
-&lt;span class=&quot;gu&quot;&gt;## header 2&lt;/span&gt;
-&lt;span class=&quot;gu&quot;&gt;### header 3&lt;/span&gt;
-&lt;span class=&quot;gu&quot;&gt;#### header 4&lt;/span&gt;
-&lt;span class=&quot;gu&quot;&gt;##### header 5&lt;/span&gt;
-&lt;span class=&quot;gu&quot;&gt;###### header 6&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;header-1&quot;&gt;header 1&lt;/h1&gt;
-&lt;h2 id=&quot;header-2&quot;&gt;header 2&lt;/h2&gt;
-&lt;h3 id=&quot;header-3&quot;&gt;header 3&lt;/h3&gt;
-&lt;h4 id=&quot;header-4&quot;&gt;header 4&lt;/h4&gt;
-&lt;h5 id=&quot;header-5&quot;&gt;header 5&lt;/h5&gt;
-&lt;h6 id=&quot;header-6&quot;&gt;header 6&lt;/h6&gt;
-
-&lt;h1 id=&quot;글꼴&quot;&gt;글꼴&lt;/h1&gt;
-&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;ge&quot;&gt;*italics*&lt;/span&gt;
-&lt;span class=&quot;ge&quot;&gt;_italics_&lt;/span&gt;
-
-&lt;span class=&quot;gs&quot;&gt;**bold**&lt;/span&gt;
-&lt;span class=&quot;gs&quot;&gt;__bold__&lt;/span&gt;
-
-&lt;span class=&quot;gs&quot;&gt;**_italics and bold_**&lt;/span&gt;
-&lt;span class=&quot;gs&quot;&gt;__*italics and bold*__&lt;/span&gt;
-
-~~strike through~~
-
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;u&amp;gt;&lt;/span&gt;underlining&lt;span class=&quot;nt&quot;&gt;&amp;lt;/u&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;em&gt;italics&lt;/em&gt;
-&lt;em&gt;italics&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;bold&lt;/strong&gt;
-&lt;strong&gt;bold&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;italics and bold&lt;/em&gt;&lt;/strong&gt;
-&lt;strong&gt;&lt;em&gt;italics and bold&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;del&gt;strike through&lt;/del&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;u&gt;underlining&lt;/u&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;리스트&quot;&gt;리스트&lt;/h1&gt;
-&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;1.&lt;/span&gt; A
-&lt;span class=&quot;p&quot;&gt;1.&lt;/span&gt; B
-&lt;span class=&quot;p&quot;&gt;  -&lt;/span&gt; a
-&lt;span class=&quot;p&quot;&gt;  -&lt;/span&gt; b
-&lt;span class=&quot;p&quot;&gt;  -&lt;/span&gt; c
-&lt;span class=&quot;p&quot;&gt;1.&lt;/span&gt; C
-&lt;span class=&quot;p&quot;&gt;  -&lt;/span&gt; a
-&lt;span class=&quot;p&quot;&gt;  -&lt;/span&gt; b
-&lt;span class=&quot;p&quot;&gt;  *&lt;/span&gt; c
-&lt;span class=&quot;p&quot;&gt;  +&lt;/span&gt; d
-&lt;span class=&quot;p&quot;&gt;1.&lt;/span&gt; D
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;A&lt;/li&gt;
-  &lt;li&gt;B
-    &lt;ul&gt;
-      &lt;li&gt;a&lt;/li&gt;
-      &lt;li&gt;b&lt;/li&gt;
-      &lt;li&gt;c&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;C
-    &lt;ul&gt;
-      &lt;li&gt;a&lt;/li&gt;
-      &lt;li&gt;b&lt;/li&gt;
-      &lt;li&gt;c&lt;/li&gt;
-      &lt;li&gt;d&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;D&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&quot;링크-삽입&quot;&gt;링크 삽입&lt;/h1&gt;
-&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;hyeonsuryu.github.io&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;https://hyeonsuryu.github.io&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;hyeonsuryu.github.io&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;https://hyeonsuryu.github.io&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;&quot;link description&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://hyeonsuryu.github.io&quot;&gt;hyeonsuryu.github.io&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://hyeonsuryu.github.io&quot; title=&quot;link description&quot;&gt;hyeonsuryu.github.io&lt;/a&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;이미지-삽입&quot;&gt;이미지 삽입&lt;/h1&gt;
-&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;![&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;alternative text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;https://hyeonsuryu.github.io/assets/images/grapes.jpg&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;&quot;link description&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;{: width=&quot;50%&quot; height=&quot;50%&quot;} #%기호 없이 픽셀 단위 가능
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://hyeonsuryu.github.io/assets/images/grapes.jpg&quot; alt=&quot;alternative text&quot; title=&quot;link description&quot; width=&quot;50%&quot; height=&quot;50%&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;표&quot;&gt;표&lt;/h1&gt;
-&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;A | B | C | D
-:---|---:|:---:|---
-a | b | c | d
-ㄱ | ㄴ | ㄷ | ㄹ
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;A&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;B&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;C&lt;/th&gt;
-      &lt;th&gt;D&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;a&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;b&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;c&lt;/td&gt;
-      &lt;td&gt;d&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;ㄱ&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;ㄴ&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;ㄷ&lt;/td&gt;
-      &lt;td&gt;ㄹ&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h1 id=&quot;인용구&quot;&gt;인용구&lt;/h1&gt;
-&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gt&quot;&gt;&amp;gt;quote&lt;/span&gt;
-&lt;span class=&quot;gt&quot;&gt;&amp;gt;quote&lt;/span&gt;
-
---
-&lt;span class=&quot;gt&quot;&gt;&amp;gt;quote&lt;/span&gt;
-&lt;span class=&quot;gt&quot;&gt;&amp;gt;&amp;gt;quote&lt;/span&gt;
-&lt;span class=&quot;gt&quot;&gt;&amp;gt;&amp;gt;&amp;gt;quote&lt;/span&gt;
-&lt;span class=&quot;gt&quot;&gt;&amp;gt;&amp;gt;&amp;gt;quote&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;quote
-quote&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;–&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;quote&lt;/p&gt;
-  &lt;blockquote&gt;
-    &lt;p&gt;quote&lt;/p&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;quote
-quote&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;</content><author><name>Hyeonsu Ryu</name></author><category term="HyeonsuRyu" /><summary type="html">#헤더 # header 1 ## header 2 ### header 3 #### header 4 ##### header 5 ###### header 6</summary></entry><entry><title type="html">Advanced Markdown tips</title><link href="/advanced-markdown" rel="alternate" type="text/html" title="Advanced Markdown tips" /><published>2017-07-27T14:00:00+09:00</published><updated>2017-07-27T14:00:00+09:00</updated><id>/advanced-markdown</id><content type="html" xml:base="/advanced-markdown">&lt;p&gt;There are lots of powerful things you can do with the Ghost editor&lt;/p&gt;
-&lt;p&gt;If you've gotten pretty comfortable with &lt;a href=&quot;/the-editor/&quot;&gt;all the basics&lt;/a&gt; of writing in Ghost, then you may enjoy some more advanced tips about the types of things you can do with Markdown!&lt;/p&gt;
-&lt;p&gt;As with the last post about the editor, you'll want to be actually editing this post as you read it so that you can see all the Markdown code we're using.&lt;/p&gt;
-&lt;h2 id=&quot;specialformatting&quot;&gt;Special formatting&lt;/h2&gt;
-&lt;p&gt;As well as bold and italics, you can also use some other special formatting in Markdown when the need arises, for example:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;s&gt;strike through&lt;/s&gt;&lt;/li&gt;
-&lt;li&gt;&lt;mark&gt;highlight&lt;/mark&gt;&lt;/li&gt;
-&lt;li&gt;*escaped characters*&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;writingcodeblocks&quot;&gt;Writing code blocks&lt;/h2&gt;
-&lt;p&gt;There are two types of code elements which can be inserted in Markdown, the first is inline, and the other is block. Inline code is formatted by wrapping any word or words in back-ticks, &lt;code&gt;like this&lt;/code&gt;. Larger snippets of code can be displayed across multiple lines using triple back ticks:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;.my-link {
-    text-decoration: underline;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;If you want to get really fancy, you can even add syntax highlighting using &lt;a href=&quot;http://prismjs.com/&quot;&gt;Prism.js&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;fullbleedimages&quot;&gt;Full bleed images&lt;/h2&gt;
-&lt;p&gt;One neat trick which you can use in Markdown to distinguish between different types of images is to add a &lt;code&gt;#hash&lt;/code&gt; value to the end of the source URL, and then target images containing the hash with special styling. For example:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://casper.ghost.org/v1.0.0/images/walking.jpg#full&quot; alt=&quot;walking&quot;&gt;&lt;/p&gt;
-&lt;p&gt;which is styled with...&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;img[src$=&amp;quot;#full&amp;quot;] {
-    max-width: 100vw;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This creates full-bleed images in the Casper theme, which stretch beyond their usual boundaries right up to the edge of the window. Every theme handles these types of things slightly differently, but it's a great trick to play with if you want to have a variety of image sizes and styles.&lt;/p&gt;
-&lt;h2 id=&quot;referencelists&quot;&gt;Reference lists&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;The quick brown &lt;a href=&quot;https://en.wikipedia.org/wiki/Fox&quot; title=&quot;Wikipedia: Fox&quot;&gt;fox&lt;/a&gt;, jumped over the lazy &lt;a href=&quot;https://en.wikipedia.org/wiki/Dog&quot; title=&quot;Wikipedia: Dog&quot;&gt;dog&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Another way to insert links in markdown is using reference lists. You might want to use this style of linking to cite reference material in a Wikipedia-style. All of the links are listed at the end of the document, so you can maintain full separation between content and its source or reference.&lt;/p&gt;
-&lt;h2 id=&quot;creatingfootnotes&quot;&gt;Creating footnotes&lt;/h2&gt;
-&lt;p&gt;The quick brown fox&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt; jumped over the lazy dog&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;#fn2&quot; id=&quot;fnref2&quot;&gt;[2]&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-&lt;p&gt;Footnotes are a great way to add additional contextual details when appropriate. Ghost will automatically add footnote content to the very end of your post.&lt;/p&gt;
-&lt;h2 id=&quot;fullhtml&quot;&gt;Full HTML&lt;/h2&gt;
-&lt;p&gt;Perhaps the best part of Markdown is that you're never limited to just Markdown. You can write HTML directly in the Ghost editor and it will just work as HTML usually does. No limits! Here's a standard YouTube embed code as an example:&lt;/p&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Cniqsc9QfDo?rel=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;hr class=&quot;footnotes-sep&quot;&gt;
-&lt;section class=&quot;footnotes&quot;&gt;
-&lt;ol class=&quot;footnotes-list&quot;&gt;
-&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;Foxes are red &lt;a href=&quot;#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&quot;fn2&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;Dogs are usually not red &lt;a href=&quot;#fnref2&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>ghost</name></author><category term="Getting started" /><summary type="html">There are lots of powerful things you can do with the Ghost editor If you've gotten pretty comfortable with all the basics of writing in Ghost, then you may enjoy some more advanced tips about the types of things you can do with Markdown! As with the last post about the editor, you'll want to be actually editing this post as you read it so that you can see all the Markdown code we're using. Special formatting As well as bold and italics, you can also use some other special formatting in Markdown when the need arises, for example: strike through highlight *escaped characters* Writing code blocks There are two types of code elements which can be inserted in Markdown, the first is inline, and the other is block. Inline code is formatted by wrapping any word or words in back-ticks, like this. Larger snippets of code can be displayed across multiple lines using triple back ticks: .my-link { text-decoration: underline; } If you want to get really fancy, you can even add syntax highlighting using Prism.js. Full bleed images One neat trick which you can use in Markdown to distinguish between different types of images is to add a #hash value to the end of the source URL, and then target images containing the hash with special styling. For example: which is styled with... img[src$=&amp;quot;#full&amp;quot;] { max-width: 100vw; } This creates full-bleed images in the Casper theme, which stretch beyond their usual boundaries right up to the edge of the window. Every theme handles these types of things slightly differently, but it's a great trick to play with if you want to have a variety of image sizes and styles. Reference lists The quick brown fox, jumped over the lazy dog. Another way to insert links in markdown is using reference lists. You might want to use this style of linking to cite reference material in a Wikipedia-style. All of the links are listed at the end of the document, so you can maintain full separation between content and its source or reference. Creating footnotes The quick brown fox[1] jumped over the lazy dog[2]. Footnotes are a great way to add additional contextual details when appropriate. Ghost will automatically add footnote content to the very end of your post. Full HTML Perhaps the best part of Markdown is that you're never limited to just Markdown. You can write HTML directly in the Ghost editor and it will just work as HTML usually does. No limits! Here's a standard YouTube embed code as an example: Foxes are red ↩︎ Dogs are usually not red ↩︎</summary></entry></feed>
+      
+      
+    </entry>
+  
+</feed>
