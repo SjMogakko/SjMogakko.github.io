@@ -2,10 +2,10 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom" >
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
-  <link href="/author/seohyun/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="/tag/seohyun/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/" rel="alternate" type="text/html" />
   <updated>2021-02-22T13:34:38+09:00</updated>
-  <id>/author/seohyun/feed.xml</id>
+  <id>/tag/seohyun/feed.xml</id>
 
   
   
