@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="/author/jiwon/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/" rel="alternate" type="text/html" />
-  <updated>2021-02-21T22:46:35+09:00</updated>
+  <updated>2021-02-22T13:21:02+09:00</updated>
   <id>/author/jiwon/feed.xml</id>
 
   
@@ -52,43 +52,50 @@
       <updated>2021-02-21T21:00:00+09:00</updated>
       <id>/jiwon</id>
       <content type="html" xml:base="/jiwon">&lt;h1 id=&quot;프로그래밍의-개념&quot;&gt;프로그래밍의 개념&lt;/h1&gt;
+
 &lt;ol&gt;
   &lt;li&gt;프로그래밍이란?
     &lt;ul&gt;
       &lt;li&gt;computer: 명령어들(instruction)의 리스트에 따라 데이터를 처리하는 기계&lt;/li&gt;
       &lt;li&gt;계산기: computer와 달리 다양한 프로그램을 수행하지 않는다.&lt;/li&gt;
       &lt;li&gt;프로그램(program): 특정한 작업을 수행하도록 설계된 명령어들의 리스트&lt;/li&gt;
+      &lt;li&gt;computer 언어는 0/1의 이진수, 즉 기계어(machine language)이므로 자연어보다는 보다 기계어에 가까운 프로그래밍 언어를 컴파일 해 기계어로 변환한다.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;computer 언어는 0/1의 이진수, 즉 기계어(machine language)이므로 자연어보다는 보다 기계어에 가까운 프로그래밍 언어를 컴파일 해 기계어로 변환한다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
   &lt;li&gt;프로그래밍 언어
     &lt;ul&gt;
       &lt;li&gt;기계어(machine language)&lt;/li&gt;
     &lt;/ul&gt;
     &lt;ul&gt;
       &lt;li&gt;이진수.&lt;/li&gt;
-      &lt;li&gt;하드웨어에 따라 다름(ex. CPU가 인텔/ARM)
-      - 어셈블리어(assembly language)&lt;/li&gt;
+      &lt;li&gt;하드웨어에 따라 다름(ex. CPU가 인텔/ARM)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;어셈블리어(assembly language)
+    &lt;ul&gt;
       &lt;li&gt;CPU의 명령어들을 기호(symbolic name)으로 표기할 수 있음&lt;/li&gt;
       &lt;li&gt;저급언어(low-level language)
         &lt;ul&gt;
           &lt;li&gt;기호 이름과 CPU 명령어가 일대일 대응됨&lt;/li&gt;
-          &lt;li&gt;CPU가 달라지면 실행할 수 없음
-    - 고급 언어(high-level language)&lt;/li&gt;
+          &lt;li&gt;CPU가 달라지면 실행할 수 없음&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;고급 언어(high-level language)
+    &lt;ul&gt;
       &lt;li&gt;computer 구조에 얽매이지 않음. 독립적&lt;/li&gt;
       &lt;li&gt;프로그램 이해, 유지, 보수 쉬움&lt;/li&gt;
       &lt;li&gt;ex. c, c++, java, c#, objective-c, fotran, pascal, cobol&lt;/li&gt;
       &lt;li&gt;아래로 갈수록 인간의 언어에 가까워 사용이 편리함&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
   &lt;li&gt;C언어 소개
     &lt;ul&gt;
       &lt;li&gt;간결하다.&lt;/li&gt;
@@ -99,7 +106,7 @@
     &lt;ul&gt;
       &lt;li&gt;다른 CPU 가지는 하드웨어로 쉽게 이식 가능하다.(많이 이용하니까)
       - C 배우면 C++에서도 지원된다.
-      * 임베디드 시스템(embeded system)&lt;/li&gt;
+      - 임베디드 시스템(embeded system)&lt;/li&gt;
       &lt;li&gt;특수목적의 시스템. com이 장치에 내장되어 있음.&lt;/li&gt;
       &lt;li&gt;하나/몇 개의 미리 결정된 작업만을 수행함.&lt;/li&gt;
     &lt;/ul&gt;
@@ -341,7 +348,7 @@
       
 
       
-        <summary type="html">프로그래밍의 개념 프로그래밍이란? computer: 명령어들(instruction)의 리스트에 따라 데이터를 처리하는 기계 계산기: computer와 달리 다양한 프로그램을 수행하지 않는다. 프로그램(program): 특정한 작업을 수행하도록 설계된 명령어들의 리스트</summary>
+        <summary type="html">프로그래밍의 개념</summary>
       
 
       

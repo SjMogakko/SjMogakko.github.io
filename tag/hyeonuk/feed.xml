@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="/tag/hyeonuk/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/" rel="alternate" type="text/html" />
-  <updated>2021-02-21T22:46:35+09:00</updated>
+  <updated>2021-02-22T13:21:02+09:00</updated>
   <id>/tag/hyeonuk/feed.xml</id>
 
   
@@ -47,11 +47,11 @@
   
     <entry>
       <title type="html">First week of Mogakco</title>
-      <link href="/First-Markdown(basic)" rel="alternate" type="text/html" title="First week of Mogakco" />
-      <published>2021-02-21T18:00:00+09:00</published>
-      <updated>2021-02-21T18:00:00+09:00</updated>
-      <id>/First-Markdown(basic)</id>
-      <content type="html" xml:base="/First-Markdown(basic)">&lt;!--큰 따옴표로 묶인 내용 수정, 따옴표는 삭제--&gt;
+      <link href="/Hyeonuk(revised)" rel="alternate" type="text/html" title="First week of Mogakco" />
+      <published>2021-02-22T13:00:00+09:00</published>
+      <updated>2021-02-22T13:00:00+09:00</updated>
+      <id>/Hyeonuk(revised)</id>
+      <content type="html" xml:base="/Hyeonuk(revised)">&lt;!--큰 따옴표로 묶인 내용 수정, 따옴표는 삭제--&gt;
 &lt;!-- tag 목록
 Hayeon
 hyeonsuryu
@@ -73,22 +73,22 @@ seohyun
 seongeun
 ---&gt;
 &lt;!--&amp;nbsp;(공백생성)--&gt;
-&lt;h1 id=&quot;sejong-universityseoulsouth-korea&quot;&gt;&lt;strong&gt;SEJONG UNIVERSITY,SEOUL,SOUTH KOREA&lt;/strong&gt;&lt;/h1&gt;
+&lt;h3 id=&quot;sejong-universityseoulsouth-korea&quot;&gt;&lt;strong&gt;SEJONG UNIVERSITY,SEOUL,SOUTH KOREA&lt;/strong&gt;&lt;/h3&gt;
 &lt;h5 id=&quot;-science-in-mechanical-and-aerospace-engineering&quot;&gt;&lt;strong&gt;-Science in Mechanical and Aerospace Engineering&lt;/strong&gt;&lt;/h5&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;I’m shinhyeonuk.&lt;/strong&gt;&lt;br /&gt;
+  &lt;p&gt;&lt;strong&gt;I’m shinhyeonuk.&lt;/strong&gt;
 email-&lt;a href=&quot;mailto:shinhyeonuk1225@naver.com&quot;&gt;shinhyeonuk1225@naver.com&lt;/a&gt;,&lt;a href=&quot;mailto:foot1225@naver.com&quot;&gt;foot1225@naver.com&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;ul&gt;
   &lt;li&gt;headfiles
     &lt;ul&gt;
-      &lt;li&gt;#include &lt;stdio.h&gt; (standard,input,output)&lt;/stdio.h&gt;&lt;/li&gt;
-      &lt;li&gt;#include &lt;stdlib.h&gt; (난수,malloc(memory allocate),free등등)&lt;/stdlib.h&gt;&lt;/li&gt;
-      &lt;li&gt;#include &lt;time.h&gt;&lt;/time.h&gt;&lt;/li&gt;
-      &lt;li&gt;#include &lt;math.h&gt;&lt;/math.h&gt;&lt;/li&gt;
-      &lt;li&gt;#include &lt;stdbool.h&gt; (false,true)&lt;/stdbool.h&gt;&lt;/li&gt;
+      &lt;li&gt;#include &amp;#60;stdio.h&amp;#62;(standard,input,output)&lt;/li&gt;
+      &lt;li&gt;#include &amp;#60;stdlib.h&amp;#62; (난수,malloc(memory allocate),free등등)&lt;/li&gt;
+      &lt;li&gt;#include &amp;#60;time.h&amp;#62;&lt;/li&gt;
+      &lt;li&gt;#include &amp;#60;math.h&amp;#62;&lt;/li&gt;
+      &lt;li&gt;#include &amp;#60;stdbool.h&amp;#62; (false,true)&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -119,69 +119,90 @@ email-&lt;a href=&quot;mailto:shinhyeonuk1225@naver.com&quot;&gt;shinhyeonuk1225
     &lt;ul&gt;
       &lt;li&gt;character(1byte)
         &lt;blockquote&gt;
-          &lt;p&gt;char (name);&lt;/p&gt;
+          &lt;pre&gt;&lt;code&gt;char c1='a';&lt;/code&gt;&lt;/pre&gt;
         &lt;/blockquote&gt;
       &lt;/li&gt;
       &lt;li&gt;integer(4byte)
         &lt;blockquote&gt;
-          &lt;p&gt;int (name);&lt;/p&gt;
+          &lt;pre&gt;&lt;code&gt;int n=1;&lt;/code&gt;&lt;/pre&gt;
         &lt;/blockquote&gt;
       &lt;/li&gt;
       &lt;li&gt;실수형태 double(8byte),float(4byte)
         &lt;blockquote&gt;
-          &lt;p&gt;double (name);&lt;br /&gt;
-  float (name);
-  flat (name)=(number)f&lt;/p&gt;
+          &lt;pre&gt;&lt;code&gt;double n=1.0;
+float pi=3.1415926535f;&lt;/code&gt;&lt;/pre&gt;
         &lt;/blockquote&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;h3 id=&quot;input-scanf입력name-and-output-printf출력name&quot;&gt;Input [Scanf(“입력”,&amp;amp;(name))] and Output [Printf(“출력”,name)]&lt;/h3&gt;
+    &lt;h3 id=&quot;input-and-output&quot;&gt;Input and Output&lt;/h3&gt;
+    &lt;blockquote&gt;
+      &lt;table&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th&gt;형태&lt;/th&gt;
+            &lt;th&gt;입력&lt;/th&gt;
+            &lt;th&gt;출력&lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;td&gt;char(1byte)&lt;/td&gt;
+            &lt;td&gt;“%c”(단어) OR “%d”(Ascii)&lt;/td&gt;
+            &lt;td&gt;“%c”(단어) OR “%d”(Ascii)&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;int(4byte)&lt;/td&gt;
+            &lt;td&gt;“%d”&lt;/td&gt;
+            &lt;td&gt;“%d”&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;double(8byte)&lt;/td&gt;
+            &lt;td&gt;“%lf”&lt;/td&gt;
+            &lt;td&gt;“%f”&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;float(4byte)&lt;/td&gt;
+            &lt;td&gt;“%f”&lt;/td&gt;
+            &lt;td&gt;“%f”&lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/blockquote&gt;
   &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;형태&lt;/th&gt;
-      &lt;th&gt;입력&lt;/th&gt;
-      &lt;th&gt;출력&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;char&lt;/td&gt;
-      &lt;td&gt;“%c”&lt;/td&gt;
-      &lt;td&gt;“%c”(단어) OR “%d”(아스키)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;int&lt;/td&gt;
-      &lt;td&gt;“%d”&lt;/td&gt;
-      &lt;td&gt;“%d”&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;double&lt;/td&gt;
-      &lt;td&gt;“%lf”&lt;/td&gt;
-      &lt;td&gt;“%f”&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;float&lt;/td&gt;
-      &lt;td&gt;“%f”&lt;/td&gt;
-      &lt;td&gt;“%f”&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;ul&gt;
+  &lt;li&gt;입력받을떄는 scanf(“%form”,&amp;amp;Name of Variable)로 변수에 수 혹은 문자 저장&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;출력할떄는 printf(“%c %d %f %p”,name1,name2,name3,name4) 로 출력&lt;/p&gt;
+  &lt;/li&gt;
   &lt;li&gt;
     &lt;h3 id=&quot;condional-statement조건문&quot;&gt;Condional Statement(조건문)&lt;/h3&gt;
     &lt;ul&gt;
-      &lt;li&gt;
+      &lt;li&gt;if 문
         &lt;blockquote&gt;
-          &lt;p&gt;if(조건문){&lt;br /&gt;
-실행문&lt;br /&gt;
-}&lt;/p&gt;
+          &lt;pre&gt;&lt;code&gt;
+ if(조건문){
+  실행문
+}
+  &lt;/code&gt;
+&lt;/pre&gt;
+        &lt;/blockquote&gt;
+        &lt;p&gt;&amp;lt;/pre&amp;gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;switch 문
+        &lt;blockquote&gt;
+          &lt;pre&gt;&lt;code&gt;
+switch(변수){
+      case 변수의값1:
+                  실행문;
+                  break;
+      case 변수의값2:
+                  실행문;
+                  break;
+      default:
+                  실행문;
+}&lt;/code&gt;&lt;/pre&gt;
+          &lt;p&gt;&lt;strong&gt;if 문과는 달리 간단한 조건들만 실행가능&lt;/strong&gt;&lt;/p&gt;
         &lt;/blockquote&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
@@ -189,25 +210,30 @@ email-&lt;a href=&quot;mailto:shinhyeonuk1225@naver.com&quot;&gt;shinhyeonuk1225
   &lt;li&gt;
     &lt;h3 id=&quot;loop-statement반복문&quot;&gt;Loop Statement(반복문)&lt;/h3&gt;
     &lt;ul&gt;
-      &lt;li&gt;
+      &lt;li&gt;while문
         &lt;blockquote&gt;
-          &lt;p&gt;while(조건문){&lt;br /&gt;
-실행문&lt;br /&gt;
-}&lt;/p&gt;
+          &lt;pre&gt;
+&lt;code&gt;while(조건문){
+    실행문;
+}  &lt;/code&gt;
+&lt;/pre&gt;
+        &lt;/blockquote&gt;
+        &lt;p&gt;&amp;lt;/pre&amp;gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;for문
+        &lt;blockquote&gt;
+          &lt;pre&gt;&lt;code&gt;for(Variable;조건문;실행문){
+   실행문;
+}&lt;/code&gt;&lt;/pre&gt;
+          &lt;p&gt;&lt;strong&gt;(세미콜론) ; 으로 구분!&lt;/strong&gt;&lt;/p&gt;
         &lt;/blockquote&gt;
       &lt;/li&gt;
-      &lt;li&gt;
+      &lt;li&gt;do while문
         &lt;blockquote&gt;
-          &lt;p&gt;for(Variable;조건문;실행문){&lt;br /&gt;
-실행문&lt;br /&gt;
-}&lt;/p&gt;
-        &lt;/blockquote&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;blockquote&gt;
-          &lt;p&gt;do{&lt;br /&gt;
-실행문&lt;br /&gt;
-}(while(조건문)) “while문과는다르게 적어도 한번 무조건 실행”&lt;/p&gt;
+          &lt;pre&gt;&lt;code&gt;do{
+    실행문
+}while(조건문);&lt;/code&gt;&lt;/pre&gt;
+          &lt;p&gt;&lt;strong&gt;while문과는다르게 조건을 만족하지 않더라도 적어도 한번 무조건 실행&lt;/strong&gt;&lt;/p&gt;
         &lt;/blockquote&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
@@ -222,14 +248,7 @@ email-&lt;a href=&quot;mailto:shinhyeonuk1225@naver.com&quot;&gt;shinhyeonuk1225
       &lt;/li&gt;
       &lt;li&gt;
         &lt;blockquote&gt;
-          &lt;table&gt;
-            &lt;tbody&gt;
-              &lt;tr&gt;
-                &lt;td&gt;Or =&amp;gt;&lt;/td&gt;
-                &lt;td&gt; &lt;/td&gt;
-              &lt;/tr&gt;
-            &lt;/tbody&gt;
-          &lt;/table&gt;
+          &lt;p&gt;Or =&amp;gt; ||&lt;/p&gt;
         &lt;/blockquote&gt;
       &lt;/li&gt;
       &lt;li&gt;
@@ -251,6 +270,10 @@ email-&lt;a href=&quot;mailto:shinhyeonuk1225@naver.com&quot;&gt;shinhyeonuk1225
 
     &lt;p&gt;int name[size]={V[0],V[1],V[2]….,V[size-1]}  &lt;strong&gt;&amp;lt;–index Start from 0&lt;/strong&gt;&lt;/p&gt;
 
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;-  Example
+&amp;lt;pre&amp;gt;&amp;lt;code&amp;gt; int table1[10]={1,2,3,4,5,6,7,8,9,10};&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
     &lt;ul&gt;
       &lt;li&gt;
         &lt;blockquote&gt;
@@ -259,20 +282,77 @@ email-&lt;a href=&quot;mailto:shinhyeonuk1225@naver.com&quot;&gt;shinhyeonuk1225
       &lt;/li&gt;
     &lt;/ul&gt;
 
-    &lt;p&gt;int name[column(세로크기)][row(가로크기)]={&lt;br /&gt;
-    {V[0][0], V[0][1], … V[0][row-1]},&lt;br /&gt;
-    {},&lt;br /&gt;
-    ….&lt;br /&gt;
-    {V[column-1][0], V[column-1][1],….., V[column-1][row-1]} &lt;br /&gt;
-}&lt;/p&gt;
-
-    &lt;hr /&gt;
-    &lt;p&gt;Because i have learned C a little before starting mogakco, this time writing becomes quite long.&lt;br /&gt;
-  It was my First time to use computer instead of Gaming.&lt;br /&gt;
-  Cause my Department would not use programming as much as Physics and Math,  mogakco’s teammates will stay ahead of me.&lt;br /&gt;
-  But i would try hard!&lt;/p&gt;
+    &lt;p&gt;int name[column(세로크기)][row(가로크기)]={
+    {V[0][0], V[0][1], … V[0][row-1]},
+    {},
+    ….
+    {V[column-1][0], V[column-1][1],….., V[column-1][row-1]}
+}
+    - Example&amp;lt;pre&amp;gt;&lt;code&gt; int table[3][4]={
+      {1,2,3},
+      {4,5,6},
+      {7,8,9}
+    };&lt;/code&gt;&amp;lt;/pre&amp;gt;&lt;/p&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content>
+&lt;/ul&gt;
+
+&lt;p&gt;and so on&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;배열 값 초기화&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt; int tabel[index]={0};&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;출력하면 {0,0,0,0,0,0,0……,0}
+index개의 0 이 table배열에 저장&lt;/p&gt;
+
+&lt;p&gt;# Print all elements in array using for문
+&lt;code class=&quot;highlighter-rouge&quot;&gt;#include &amp;amp;#60;stdio.h&amp;amp;#62;
+int main(){
+  int ex_table[5][4]={
+      {1,2,3,4},
+      {5,6,7,8},
+      {9,10,11,12},
+      {13,14,15,16},
+      {17,18,19,20}
+  };
+  for(int i=0;i &amp;lt; sizeof(ex_table)/sizeof(ex_table[0]);i++)
+      {
+      for(int j=0; j &amp;lt; sizeof(ex_table[0])/sizeof(int);j++)
+      {
+          printf(&quot;%d &quot;,ex_table[i][j]);
+      }
+      printf(&quot;\n&quot;);
+  }
+  return 0;
+}
+&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;sizeof는 바이트수를 구하는 함수이다.
+sizeof(ex_table)=4X20=80(정수의바이트수 4, 정수의 갯수 20).&lt;br /&gt;
+sizeof(ex_table[0]) = 4X4=16(정수의바이트수 4, ex_table[0]의 원소갯수 4)&lt;br /&gt;
+따라서 sizeof(ex_table)/sizef(ex_table[0])은 ex_table의 column,즉 세로줄의 갯수를 구하는것이다.&lt;br /&gt;
+sizeof(ex_table)/sizeof(int)는 ex_table의 row,한 가로줄에있는 원소의 갯수를 구하는것이다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;위의 코드를 실행&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1 2 3 4
+5 6 7 8
+9 10 11 12
+13 14 15 16
+17 18 19 20
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;Because i have learned C a little before starting mogakco, this time writing becomes quite long.&lt;/p&gt;
+
+&lt;p&gt;It was my First time to use computer instead of Gaming.&lt;/p&gt;
+
+&lt;p&gt;Cause my Department would not use programming as much as Physics and Math,
+mogakco’s teammates will stay ahead of me.&lt;/p&gt;
+
+&lt;p&gt;But i would try hard!&lt;/p&gt;
+
+&lt;p&gt;I am looking forward to programming some project together with mogakco’s friend !!!&lt;/p&gt;</content>
 
       
       

@@ -1,4 +1,305 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-02-21T22:46:35+09:00</updated><id>/</id><title type="html">SjMogakko.github.io</title><subtitle>세종대 새내기 모각코</subtitle><entry><title type="html">모각코 첫주 활동 정리</title><link href="/first-week" rel="alternate" type="text/html" title="모각코 첫주 활동 정리" /><published>2021-02-21T22:30:00+09:00</published><updated>2021-02-21T22:30:00+09:00</updated><id>/first-week</id><content type="html" xml:base="/first-week">&lt;h1 id=&quot;월요일&quot;&gt;월요일&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-02-22T13:21:02+09:00</updated><id>/</id><title type="html">SjMogakko.github.io</title><subtitle>세종대 새내기 모각코</subtitle><entry><title type="html">First week of Mogakco</title><link href="/Hyeonuk(revised)" rel="alternate" type="text/html" title="First week of Mogakco" /><published>2021-02-22T13:00:00+09:00</published><updated>2021-02-22T13:00:00+09:00</updated><id>/Hyeonuk(revised)</id><content type="html" xml:base="/Hyeonuk(revised)">&lt;!--큰 따옴표로 묶인 내용 수정, 따옴표는 삭제--&gt;
+&lt;!-- tag 목록
+Hayeon
+hyeonsuryu
+Hyeonuk
+Jiwon
+Minsung
+Ojaeo
+Seohyun
+Seongeun
+--&gt;
+&lt;!-- author 목록
+hayeon
+hyeonsu
+hyeonuk
+jiwon
+minsung
+ojaeo
+seohyun
+seongeun
+---&gt;
+&lt;!--&amp;nbsp;(공백생성)--&gt;
+&lt;h3 id=&quot;sejong-universityseoulsouth-korea&quot;&gt;&lt;strong&gt;SEJONG UNIVERSITY,SEOUL,SOUTH KOREA&lt;/strong&gt;&lt;/h3&gt;
+&lt;h5 id=&quot;-science-in-mechanical-and-aerospace-engineering&quot;&gt;&lt;strong&gt;-Science in Mechanical and Aerospace Engineering&lt;/strong&gt;&lt;/h5&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;I’m shinhyeonuk.&lt;/strong&gt;
+email-&lt;a href=&quot;mailto:shinhyeonuk1225@naver.com&quot;&gt;shinhyeonuk1225@naver.com&lt;/a&gt;,&lt;a href=&quot;mailto:foot1225@naver.com&quot;&gt;foot1225@naver.com&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;headfiles
+    &lt;ul&gt;
+      &lt;li&gt;#include &amp;#60;stdio.h&amp;#62;(standard,input,output)&lt;/li&gt;
+      &lt;li&gt;#include &amp;#60;stdlib.h&amp;#62; (난수,malloc(memory allocate),free등등)&lt;/li&gt;
+      &lt;li&gt;#include &amp;#60;time.h&amp;#62;&lt;/li&gt;
+      &lt;li&gt;#include &amp;#60;math.h&amp;#62;&lt;/li&gt;
+      &lt;li&gt;#include &amp;#60;stdbool.h&amp;#62; (false,true)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;FInal Goal&lt;/strong&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Will be determined after we learn more&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Now&lt;/strong&gt;
+      &lt;ul&gt;
+        &lt;li&gt;FInish Basic C in one and  a half month&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;C언어 입문 &lt;a href=&quot;https://dojang.io/course/view.php?id=2&quot;&gt;코딩도장&lt;/a&gt;&lt;/strong&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Unit 1~Unit 37 (except somethings hard to understand)&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;declaring-variables&quot;&gt;Declaring Variables&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;character(1byte)
+        &lt;blockquote&gt;
+          &lt;pre&gt;&lt;code&gt;char c1='a';&lt;/code&gt;&lt;/pre&gt;
+        &lt;/blockquote&gt;
+      &lt;/li&gt;
+      &lt;li&gt;integer(4byte)
+        &lt;blockquote&gt;
+          &lt;pre&gt;&lt;code&gt;int n=1;&lt;/code&gt;&lt;/pre&gt;
+        &lt;/blockquote&gt;
+      &lt;/li&gt;
+      &lt;li&gt;실수형태 double(8byte),float(4byte)
+        &lt;blockquote&gt;
+          &lt;pre&gt;&lt;code&gt;double n=1.0;
+float pi=3.1415926535f;&lt;/code&gt;&lt;/pre&gt;
+        &lt;/blockquote&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;input-and-output&quot;&gt;Input and Output&lt;/h3&gt;
+    &lt;blockquote&gt;
+      &lt;table&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th&gt;형태&lt;/th&gt;
+            &lt;th&gt;입력&lt;/th&gt;
+            &lt;th&gt;출력&lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;td&gt;char(1byte)&lt;/td&gt;
+            &lt;td&gt;“%c”(단어) OR “%d”(Ascii)&lt;/td&gt;
+            &lt;td&gt;“%c”(단어) OR “%d”(Ascii)&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;int(4byte)&lt;/td&gt;
+            &lt;td&gt;“%d”&lt;/td&gt;
+            &lt;td&gt;“%d”&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;double(8byte)&lt;/td&gt;
+            &lt;td&gt;“%lf”&lt;/td&gt;
+            &lt;td&gt;“%f”&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;float(4byte)&lt;/td&gt;
+            &lt;td&gt;“%f”&lt;/td&gt;
+            &lt;td&gt;“%f”&lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;입력받을떄는 scanf(“%form”,&amp;amp;Name of Variable)로 변수에 수 혹은 문자 저장&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;출력할떄는 printf(“%c %d %f %p”,name1,name2,name3,name4) 로 출력&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;condional-statement조건문&quot;&gt;Condional Statement(조건문)&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;if 문
+        &lt;blockquote&gt;
+          &lt;pre&gt;&lt;code&gt;
+ if(조건문){
+  실행문
+}
+  &lt;/code&gt;
+&lt;/pre&gt;
+        &lt;/blockquote&gt;
+        &lt;p&gt;&amp;lt;/pre&amp;gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;switch 문
+        &lt;blockquote&gt;
+          &lt;pre&gt;&lt;code&gt;
+switch(변수){
+      case 변수의값1:
+                  실행문;
+                  break;
+      case 변수의값2:
+                  실행문;
+                  break;
+      default:
+                  실행문;
+}&lt;/code&gt;&lt;/pre&gt;
+          &lt;p&gt;&lt;strong&gt;if 문과는 달리 간단한 조건들만 실행가능&lt;/strong&gt;&lt;/p&gt;
+        &lt;/blockquote&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;loop-statement반복문&quot;&gt;Loop Statement(반복문)&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;while문
+        &lt;blockquote&gt;
+          &lt;pre&gt;
+&lt;code&gt;while(조건문){
+    실행문;
+}  &lt;/code&gt;
+&lt;/pre&gt;
+        &lt;/blockquote&gt;
+        &lt;p&gt;&amp;lt;/pre&amp;gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;for문
+        &lt;blockquote&gt;
+          &lt;pre&gt;&lt;code&gt;for(Variable;조건문;실행문){
+   실행문;
+}&lt;/code&gt;&lt;/pre&gt;
+          &lt;p&gt;&lt;strong&gt;(세미콜론) ; 으로 구분!&lt;/strong&gt;&lt;/p&gt;
+        &lt;/blockquote&gt;
+      &lt;/li&gt;
+      &lt;li&gt;do while문
+        &lt;blockquote&gt;
+          &lt;pre&gt;&lt;code&gt;do{
+    실행문
+}while(조건문);&lt;/code&gt;&lt;/pre&gt;
+          &lt;p&gt;&lt;strong&gt;while문과는다르게 조건을 만족하지 않더라도 적어도 한번 무조건 실행&lt;/strong&gt;&lt;/p&gt;
+        &lt;/blockquote&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;operators연산자&quot;&gt;Operators(연산자)&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;blockquote&gt;
+          &lt;p&gt;And =&amp;gt; &amp;amp;&amp;amp;&lt;/p&gt;
+        &lt;/blockquote&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;blockquote&gt;
+          &lt;p&gt;Or =&amp;gt; ||&lt;/p&gt;
+        &lt;/blockquote&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;blockquote&gt;
+          &lt;p&gt;Not =&amp;gt; !&lt;/p&gt;
+        &lt;/blockquote&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;array배열&quot;&gt;Array(배열)&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;blockquote&gt;
+          &lt;p&gt;1 dimension array(1차원)&lt;/p&gt;
+        &lt;/blockquote&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;int name[size]={V[0],V[1],V[2]….,V[size-1]}  &lt;strong&gt;&amp;lt;–index Start from 0&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;-  Example
+&amp;lt;pre&amp;gt;&amp;lt;code&amp;gt; int table1[10]={1,2,3,4,5,6,7,8,9,10};&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;blockquote&gt;
+          &lt;p&gt;2 dimension array(2차원)&lt;/p&gt;
+        &lt;/blockquote&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;int name[column(세로크기)][row(가로크기)]={
+    {V[0][0], V[0][1], … V[0][row-1]},
+    {},
+    ….
+    {V[column-1][0], V[column-1][1],….., V[column-1][row-1]}
+}
+    - Example&amp;lt;pre&amp;gt;&lt;code&gt; int table[3][4]={
+      {1,2,3},
+      {4,5,6},
+      {7,8,9}
+    };&lt;/code&gt;&amp;lt;/pre&amp;gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;and so on&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;배열 값 초기화&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt; int tabel[index]={0};&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;출력하면 {0,0,0,0,0,0,0……,0}
+index개의 0 이 table배열에 저장&lt;/p&gt;
+
+&lt;p&gt;# Print all elements in array using for문
+&lt;code class=&quot;highlighter-rouge&quot;&gt;#include &amp;amp;#60;stdio.h&amp;amp;#62;
+int main(){
+  int ex_table[5][4]={
+      {1,2,3,4},
+      {5,6,7,8},
+      {9,10,11,12},
+      {13,14,15,16},
+      {17,18,19,20}
+  };
+  for(int i=0;i &amp;lt; sizeof(ex_table)/sizeof(ex_table[0]);i++)
+      {
+      for(int j=0; j &amp;lt; sizeof(ex_table[0])/sizeof(int);j++)
+      {
+          printf(&quot;%d &quot;,ex_table[i][j]);
+      }
+      printf(&quot;\n&quot;);
+  }
+  return 0;
+}
+&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;sizeof는 바이트수를 구하는 함수이다.
+sizeof(ex_table)=4X20=80(정수의바이트수 4, 정수의 갯수 20).&lt;br /&gt;
+sizeof(ex_table[0]) = 4X4=16(정수의바이트수 4, ex_table[0]의 원소갯수 4)&lt;br /&gt;
+따라서 sizeof(ex_table)/sizef(ex_table[0])은 ex_table의 column,즉 세로줄의 갯수를 구하는것이다.&lt;br /&gt;
+sizeof(ex_table)/sizeof(int)는 ex_table의 row,한 가로줄에있는 원소의 갯수를 구하는것이다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;위의 코드를 실행&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1 2 3 4
+5 6 7 8
+9 10 11 12
+13 14 15 16
+17 18 19 20
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;Because i have learned C a little before starting mogakco, this time writing becomes quite long.&lt;/p&gt;
+
+&lt;p&gt;It was my First time to use computer instead of Gaming.&lt;/p&gt;
+
+&lt;p&gt;Cause my Department would not use programming as much as Physics and Math,
+mogakco’s teammates will stay ahead of me.&lt;/p&gt;
+
+&lt;p&gt;But i would try hard!&lt;/p&gt;
+
+&lt;p&gt;I am looking forward to programming some project together with mogakco’s friend !!!&lt;/p&gt;</content><author><name>hyeounuk</name></author><category term="Hyeonuk" /><summary type="html">SEJONG UNIVERSITY,SEOUL,SOUTH KOREA -Science in Mechanical and Aerospace Engineering</summary></entry><entry><title type="html">모각코 첫주 활동 정리</title><link href="/first-week" rel="alternate" type="text/html" title="모각코 첫주 활동 정리" /><published>2021-02-21T22:30:00+09:00</published><updated>2021-02-21T22:30:00+09:00</updated><id>/first-week</id><content type="html" xml:base="/first-week">&lt;h1 id=&quot;월요일&quot;&gt;월요일&lt;/h1&gt;
 &lt;p&gt; 월요일은 모각코 첫 활동일로 활동 방법을 소개하고 공부 목표를 세웠다. 나는 다른 사람과 함께 알고리즘을 공부하기로 하였다. 공부하고자 하는 알고리즘을 정하여 몇개의 문제를 뽑아 각자 문제를 풀어오고 모각코 활동 시간동안 서로의 풀이를 보고 개선 방안 등을 이야기하기로 하였다.&lt;/p&gt;
 
 &lt;h1 id=&quot;화요일&quot;&gt;화요일&lt;/h1&gt;
@@ -61,43 +362,50 @@
   &lt;li&gt;깃허브 사용법 정리&lt;/li&gt;
   &lt;li&gt;MySQL 공부&lt;/li&gt;
 &lt;/ul&gt;</content><author><name>Hyeonsu Ryu</name></author><category term="hyeonsuryu" /><summary type="html">월요일  월요일은 모각코 첫 활동일로 활동 방법을 소개하고 공부 목표를 세웠다. 나는 다른 사람과 함께 알고리즘을 공부하기로 하였다. 공부하고자 하는 알고리즘을 정하여 몇개의 문제를 뽑아 각자 문제를 풀어오고 모각코 활동 시간동안 서로의 풀이를 보고 개선 방안 등을 이야기하기로 하였다.</summary></entry><entry><title type="html">유지원 첫째 주</title><link href="/jiwon" rel="alternate" type="text/html" title="유지원 첫째 주" /><published>2021-02-21T21:00:00+09:00</published><updated>2021-02-21T21:00:00+09:00</updated><id>/jiwon</id><content type="html" xml:base="/jiwon">&lt;h1 id=&quot;프로그래밍의-개념&quot;&gt;프로그래밍의 개념&lt;/h1&gt;
+
 &lt;ol&gt;
   &lt;li&gt;프로그래밍이란?
     &lt;ul&gt;
       &lt;li&gt;computer: 명령어들(instruction)의 리스트에 따라 데이터를 처리하는 기계&lt;/li&gt;
       &lt;li&gt;계산기: computer와 달리 다양한 프로그램을 수행하지 않는다.&lt;/li&gt;
       &lt;li&gt;프로그램(program): 특정한 작업을 수행하도록 설계된 명령어들의 리스트&lt;/li&gt;
+      &lt;li&gt;computer 언어는 0/1의 이진수, 즉 기계어(machine language)이므로 자연어보다는 보다 기계어에 가까운 프로그래밍 언어를 컴파일 해 기계어로 변환한다.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;computer 언어는 0/1의 이진수, 즉 기계어(machine language)이므로 자연어보다는 보다 기계어에 가까운 프로그래밍 언어를 컴파일 해 기계어로 변환한다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
   &lt;li&gt;프로그래밍 언어
     &lt;ul&gt;
       &lt;li&gt;기계어(machine language)&lt;/li&gt;
     &lt;/ul&gt;
     &lt;ul&gt;
       &lt;li&gt;이진수.&lt;/li&gt;
-      &lt;li&gt;하드웨어에 따라 다름(ex. CPU가 인텔/ARM)
-      - 어셈블리어(assembly language)&lt;/li&gt;
+      &lt;li&gt;하드웨어에 따라 다름(ex. CPU가 인텔/ARM)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;어셈블리어(assembly language)
+    &lt;ul&gt;
       &lt;li&gt;CPU의 명령어들을 기호(symbolic name)으로 표기할 수 있음&lt;/li&gt;
       &lt;li&gt;저급언어(low-level language)
         &lt;ul&gt;
           &lt;li&gt;기호 이름과 CPU 명령어가 일대일 대응됨&lt;/li&gt;
-          &lt;li&gt;CPU가 달라지면 실행할 수 없음
-    - 고급 언어(high-level language)&lt;/li&gt;
+          &lt;li&gt;CPU가 달라지면 실행할 수 없음&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;고급 언어(high-level language)
+    &lt;ul&gt;
       &lt;li&gt;computer 구조에 얽매이지 않음. 독립적&lt;/li&gt;
       &lt;li&gt;프로그램 이해, 유지, 보수 쉬움&lt;/li&gt;
       &lt;li&gt;ex. c, c++, java, c#, objective-c, fotran, pascal, cobol&lt;/li&gt;
       &lt;li&gt;아래로 갈수록 인간의 언어에 가까워 사용이 편리함&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
   &lt;li&gt;C언어 소개
     &lt;ul&gt;
       &lt;li&gt;간결하다.&lt;/li&gt;
@@ -108,7 +416,7 @@
     &lt;ul&gt;
       &lt;li&gt;다른 CPU 가지는 하드웨어로 쉽게 이식 가능하다.(많이 이용하니까)
       - C 배우면 C++에서도 지원된다.
-      * 임베디드 시스템(embeded system)&lt;/li&gt;
+      - 임베디드 시스템(embeded system)&lt;/li&gt;
       &lt;li&gt;특수목적의 시스템. com이 장치에 내장되어 있음.&lt;/li&gt;
       &lt;li&gt;하나/몇 개의 미리 결정된 작업만을 수행함.&lt;/li&gt;
     &lt;/ul&gt;
@@ -329,228 +637,7 @@
       &lt;li&gt;파이썬과 달리 서식 지정이 가능하다.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>JiwonRyu</name></author><category term="Jiwon" /><summary type="html">프로그래밍의 개념 프로그래밍이란? computer: 명령어들(instruction)의 리스트에 따라 데이터를 처리하는 기계 계산기: computer와 달리 다양한 프로그램을 수행하지 않는다. 프로그램(program): 특정한 작업을 수행하도록 설계된 명령어들의 리스트</summary></entry><entry><title type="html">First week of Mogakco</title><link href="/First-Markdown(basic)" rel="alternate" type="text/html" title="First week of Mogakco" /><published>2021-02-21T18:00:00+09:00</published><updated>2021-02-21T18:00:00+09:00</updated><id>/First-Markdown(basic)</id><content type="html" xml:base="/First-Markdown(basic)">&lt;!--큰 따옴표로 묶인 내용 수정, 따옴표는 삭제--&gt;
-&lt;!-- tag 목록
-Hayeon
-hyeonsuryu
-Hyeonuk
-Jiwon
-Minsung
-Ojaeo
-Seohyun
-Seongeun
---&gt;
-&lt;!-- author 목록
-hayeon
-hyeonsu
-hyeonuk
-jiwon
-minsung
-ojaeo
-seohyun
-seongeun
----&gt;
-&lt;!--&amp;nbsp;(공백생성)--&gt;
-&lt;h1 id=&quot;sejong-universityseoulsouth-korea&quot;&gt;&lt;strong&gt;SEJONG UNIVERSITY,SEOUL,SOUTH KOREA&lt;/strong&gt;&lt;/h1&gt;
-&lt;h5 id=&quot;-science-in-mechanical-and-aerospace-engineering&quot;&gt;&lt;strong&gt;-Science in Mechanical and Aerospace Engineering&lt;/strong&gt;&lt;/h5&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;I’m shinhyeonuk.&lt;/strong&gt;&lt;br /&gt;
-email-&lt;a href=&quot;mailto:shinhyeonuk1225@naver.com&quot;&gt;shinhyeonuk1225@naver.com&lt;/a&gt;,&lt;a href=&quot;mailto:foot1225@naver.com&quot;&gt;foot1225@naver.com&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;headfiles
-    &lt;ul&gt;
-      &lt;li&gt;#include &lt;stdio.h&gt; (standard,input,output)&lt;/stdio.h&gt;&lt;/li&gt;
-      &lt;li&gt;#include &lt;stdlib.h&gt; (난수,malloc(memory allocate),free등등)&lt;/stdlib.h&gt;&lt;/li&gt;
-      &lt;li&gt;#include &lt;time.h&gt;&lt;/time.h&gt;&lt;/li&gt;
-      &lt;li&gt;#include &lt;math.h&gt;&lt;/math.h&gt;&lt;/li&gt;
-      &lt;li&gt;#include &lt;stdbool.h&gt; (false,true)&lt;/stdbool.h&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;strong&gt;FInal Goal&lt;/strong&gt;
-      &lt;ul&gt;
-        &lt;li&gt;Will be determined after we learn more&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Now&lt;/strong&gt;
-      &lt;ul&gt;
-        &lt;li&gt;FInish Basic C in one and  a half month&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;C언어 입문 &lt;a href=&quot;https://dojang.io/course/view.php?id=2&quot;&gt;코딩도장&lt;/a&gt;&lt;/strong&gt;
-      &lt;ul&gt;
-        &lt;li&gt;Unit 1~Unit 37 (except somethings hard to understand)&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h3 id=&quot;declaring-variables&quot;&gt;Declaring Variables&lt;/h3&gt;
-    &lt;ul&gt;
-      &lt;li&gt;character(1byte)
-        &lt;blockquote&gt;
-          &lt;p&gt;char (name);&lt;/p&gt;
-        &lt;/blockquote&gt;
-      &lt;/li&gt;
-      &lt;li&gt;integer(4byte)
-        &lt;blockquote&gt;
-          &lt;p&gt;int (name);&lt;/p&gt;
-        &lt;/blockquote&gt;
-      &lt;/li&gt;
-      &lt;li&gt;실수형태 double(8byte),float(4byte)
-        &lt;blockquote&gt;
-          &lt;p&gt;double (name);&lt;br /&gt;
-  float (name);
-  flat (name)=(number)f&lt;/p&gt;
-        &lt;/blockquote&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h3 id=&quot;input-scanf입력name-and-output-printf출력name&quot;&gt;Input [Scanf(“입력”,&amp;amp;(name))] and Output [Printf(“출력”,name)]&lt;/h3&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;형태&lt;/th&gt;
-      &lt;th&gt;입력&lt;/th&gt;
-      &lt;th&gt;출력&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;char&lt;/td&gt;
-      &lt;td&gt;“%c”&lt;/td&gt;
-      &lt;td&gt;“%c”(단어) OR “%d”(아스키)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;int&lt;/td&gt;
-      &lt;td&gt;“%d”&lt;/td&gt;
-      &lt;td&gt;“%d”&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;double&lt;/td&gt;
-      &lt;td&gt;“%lf”&lt;/td&gt;
-      &lt;td&gt;“%f”&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;float&lt;/td&gt;
-      &lt;td&gt;“%f”&lt;/td&gt;
-      &lt;td&gt;“%f”&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h3 id=&quot;condional-statement조건문&quot;&gt;Condional Statement(조건문)&lt;/h3&gt;
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;blockquote&gt;
-          &lt;p&gt;if(조건문){&lt;br /&gt;
-실행문&lt;br /&gt;
-}&lt;/p&gt;
-        &lt;/blockquote&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h3 id=&quot;loop-statement반복문&quot;&gt;Loop Statement(반복문)&lt;/h3&gt;
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;blockquote&gt;
-          &lt;p&gt;while(조건문){&lt;br /&gt;
-실행문&lt;br /&gt;
-}&lt;/p&gt;
-        &lt;/blockquote&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;blockquote&gt;
-          &lt;p&gt;for(Variable;조건문;실행문){&lt;br /&gt;
-실행문&lt;br /&gt;
-}&lt;/p&gt;
-        &lt;/blockquote&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;blockquote&gt;
-          &lt;p&gt;do{&lt;br /&gt;
-실행문&lt;br /&gt;
-}(while(조건문)) “while문과는다르게 적어도 한번 무조건 실행”&lt;/p&gt;
-        &lt;/blockquote&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h3 id=&quot;operators연산자&quot;&gt;Operators(연산자)&lt;/h3&gt;
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;blockquote&gt;
-          &lt;p&gt;And =&amp;gt; &amp;amp;&amp;amp;&lt;/p&gt;
-        &lt;/blockquote&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;blockquote&gt;
-          &lt;table&gt;
-            &lt;tbody&gt;
-              &lt;tr&gt;
-                &lt;td&gt;Or =&amp;gt;&lt;/td&gt;
-                &lt;td&gt; &lt;/td&gt;
-              &lt;/tr&gt;
-            &lt;/tbody&gt;
-          &lt;/table&gt;
-        &lt;/blockquote&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;blockquote&gt;
-          &lt;p&gt;Not =&amp;gt; !&lt;/p&gt;
-        &lt;/blockquote&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h3 id=&quot;array배열&quot;&gt;Array(배열)&lt;/h3&gt;
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;blockquote&gt;
-          &lt;p&gt;1 dimension array(1차원)&lt;/p&gt;
-        &lt;/blockquote&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;p&gt;int name[size]={V[0],V[1],V[2]….,V[size-1]}  &lt;strong&gt;&amp;lt;–index Start from 0&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;blockquote&gt;
-          &lt;p&gt;2 dimension array(2차원)&lt;/p&gt;
-        &lt;/blockquote&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;p&gt;int name[column(세로크기)][row(가로크기)]={&lt;br /&gt;
-    {V[0][0], V[0][1], … V[0][row-1]},&lt;br /&gt;
-    {},&lt;br /&gt;
-    ….&lt;br /&gt;
-    {V[column-1][0], V[column-1][1],….., V[column-1][row-1]} &lt;br /&gt;
-}&lt;/p&gt;
-
-    &lt;hr /&gt;
-    &lt;p&gt;Because i have learned C a little before starting mogakco, this time writing becomes quite long.&lt;br /&gt;
-  It was my First time to use computer instead of Gaming.&lt;br /&gt;
-  Cause my Department would not use programming as much as Physics and Math,  mogakco’s teammates will stay ahead of me.&lt;br /&gt;
-  But i would try hard!&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>hyeounuk</name></author><category term="Hyeonuk" /><summary type="html">SEJONG UNIVERSITY,SEOUL,SOUTH KOREA -Science in Mechanical and Aerospace Engineering</summary></entry><entry><title type="html">2월 3주차 내용 정리</title><link href="/first" rel="alternate" type="text/html" title="2월 3주차 내용 정리" /><published>2021-02-21T00:00:01+09:00</published><updated>2021-02-21T00:00:01+09:00</updated><id>/first</id><content type="html" xml:base="/first">&lt;h1 id=&quot;알고리즘&quot;&gt;알고리즘&lt;/h1&gt;
+&lt;/ol&gt;</content><author><name>JiwonRyu</name></author><category term="Jiwon" /><summary type="html">프로그래밍의 개념</summary></entry><entry><title type="html">2월 3주차 내용 정리</title><link href="/first" rel="alternate" type="text/html" title="2월 3주차 내용 정리" /><published>2021-02-21T00:00:01+09:00</published><updated>2021-02-21T00:00:01+09:00</updated><id>/first</id><content type="html" xml:base="/first">&lt;h1 id=&quot;알고리즘&quot;&gt;알고리즘&lt;/h1&gt;
 
 &lt;h2 id=&quot;탐색-알고리즘&quot;&gt;탐색 알고리즘&lt;/h2&gt;
 
