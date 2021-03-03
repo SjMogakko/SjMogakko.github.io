@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Document Settings -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Base Meta -->
+    <!-- dynamically fixing the title for tag/author pages -->
+
+
+
+    <title>2월 4주차 백준 4문제 풀이</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles'n'Scripts -->
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.edited.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/built/syntax.css" />
+    <!-- webfont -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css">
+    <!-- highlight.js -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <style>.hljs { background: none; }</style>
+
+    <!--[if IE]>
+        <style>
+            p, ol, ul{
+                width: 100%;
+            }
+            blockquote{
+                width: 100%;
+            }
+        </style>
+    <![endif]-->
+
+    <!-- This tag outputs SEO meta+structured data and other important settings -->
+    <meta name="description" content="세종대 새내기 모각코" />
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/png" />
+    <link rel="canonical" href="/second" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+
+     <!--title below is coming from _includes/dynamic_title-->
+    <meta property="og:site_name" content="SjMogakko.github.io" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="2월 4주차 백준 4문제 풀이" />
+    <meta property="og:description" content="2104 문제 크기가 N(1≤N≤100,000)인 1차원 배열 A[1], …, A[N]이 있다. 어떤 i, j(1≤i≤j≤N)에 대한 점수는, (A[i]+…+A[j])×Min{A[i], …, A[j]}가 된다. 즉, i부터 j까지의 합에다가 i부터 j까지의 최솟값을 곱한 것이 점수가 된다. 배열이 주어졌을 때, 최대의 점수를 갖는 부분배열을 골라내는 프로그램을 작성하시오. 입력 첫째 줄에 정수 N이 주어진다. 다음 줄에는 A[1], …," />
+    <meta property="og:url" content="/second" />
+    <meta property="og:image" content="/asssets/images/1400X800(bg_image).png" />
+    <meta property="article:publisher" content="https://www.facebook.com/" />
+    <meta property="article:author" content="https://www.facebook.com/" />
+    <meta property="article:published_time" content="2021-03-01T00:00:01+09:00" />
+    <meta property="article:modified_time" content="2021-03-01T00:00:01+09:00" />
+    <meta property="article:tag" content="Ojaeo" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="2월 4주차 백준 4문제 풀이" />
+    <meta name="twitter:description" content="2104 문제 크기가 N(1≤N≤100,000)인 1차원 배열 A[1], …, A[N]이 있다. 어떤 i, j(1≤i≤j≤N)에 대한 점수는, (A[i]+…+A[j])×Min{A[i], …, A[j]}가 된다. 즉, i부터 j까지의 합에다가 i부터 j까지의 최솟값을 곱한 것이 점수가 된다. 배열이 주어졌을 때, 최대의 점수를 갖는 부분배열을 골라내는 프로그램을 작성하시오. 입력 첫째 줄에 정수 N이 주어진다. 다음 줄에는 A[1], …," />
+    <meta name="twitter:url" content="/" />
+    <meta name="twitter:image" content="/asssets/images/1400X800(bg_image).png" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="SjMogakko.github.io" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="Ojaeo" />
+    <meta name="twitter:site" content="@" />
+    <meta name="twitter:creator" content="@" />
+    <meta property="og:image:width" content="1400" />
+    <meta property="og:image:height" content="933" />
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Website",
+    "publisher": {
+        "@type": "Organization",
+        "name": "SjMogakko.github.io",
+        "logo": "/assets/images/blog-icon.png"
+    },
+    "url": "/second",
+    "image": {
+        "@type": "ImageObject",
+        "url": "/asssets/images/1400X800(bg_image).png",
+        "width": 2000,
+        "height": 666
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/second"
+    },
+    "description": "2104 문제 크기가 N(1≤N≤100,000)인 1차원 배열 A[1], …, A[N]이 있다. 어떤 i, j(1≤i≤j≤N)에 대한 점수는, (A[i]+…+A[j])×Min{A[i], …, A[j]}가 된다. 즉, i부터 j까지의 합에다가 i부터 j까지의 최솟값을 곱한 것이 점수가 된다. 배열이 주어졌을 때, 최대의 점수를 갖는 부분배열을 골라내는 프로그램을 작성하시오. 입력 첫째 줄에 정수 N이 주어진다. 다음 줄에는 A[1], …,"
+}
+    </script>
+
+    <!-- <script type="text/javascript" src="https://demo.ghost.io/public/ghost-sdk.min.js?v=724281a32e"></script>
+    <script type="text/javascript">
+    ghost.init({
+    	clientId: "ghost-frontend",
+    	clientSecret: "f84a07a72b17"
+    });
+    </script> -->
+
+    <meta name="generator" content="Jekyll 3.6.2" />
+    <link rel="alternate" type="application/rss+xml" title="2월 4주차 백준 4문제 풀이" href="/feed.xml" />
+
+
+</head>
+<body class="post-template">
+
+    <div class="site-wrapper">
+        <!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
+        <!-- default -->
+
+<!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template -->
+
+<header class="site-header outer">
+    <div class="inner">
+        <nav class="site-nav">
+    <div class="site-nav-left">
+        
+            
+                <a class="site-nav-logo" href="/"><img src="/assets/images/blog-icon.png" alt="SjMogakko.github.io" /></a>
+            
+        
+        
+            <ul class="nav" role="menu">
+    <li class="nav-home" role="menuitem"><a href="/">Home</a></li>
+    <li class="nav-HyeonsuRyu" role="menuitem"><a href="/tag/HyeonsuRyu/">류현수</a></li>
+    <li class="nav-Hayeon" role="menuitem"><a href="/tag/Hayeon/">백하연</a></li>
+    <li class="nav-Minsung" role="menuitem"><a href="/tag/Minsung/">신민성</a></li>
+    <li class="nav-Hyeonuk" role="menuitem"><a href="/tag/Hyeonuk/">신현욱</a></li>
+    <li class="nav-Seohyun" role="menuitem"><a href="/tag/Seohyun/">양서현</a></li>
+    <li class="nav-Ojaeo" role="menuitem"><a href="/tag/Ojaeo/">오재오</a></li>
+    <li class="nav-Jiwon" role="menuitem"><a href="/tag/Jiwon/">유지원</a></li>
+    <li class="nav-Seongeun" role="menuitem"><a href="/tag/Seongeun/">이성은</a></li>
+</ul>
+
+        
+    </div>
+    <div class="site-nav-right">
+        <div class="social-links">
+            
+            
+        </div>
+        
+    </div>
+</nav>
+
+    </div>
+</header>
+
+<!-- Everything inside the #post tags pulls data from the post -->
+<!-- #post -->
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+
+        <article class="post-full  tag-ojaeo post ">
+
+            <header class="post-full-header">
+                <section class="post-full-meta">
+                    <time class="post-full-meta-date" datetime=" 1 March 2021"> 1 March 2021</time>
+                    
+                        <span class="date-divider">/</span>
+                        
+                            
+                               <a href='/tag/ojaeo/'>OJAEO</a>
+                            
+                        
+                    
+                </section>
+                <h1 class="post-full-title">2월 4주차 백준 4문제 풀이</h1>
+            </header>
+
+            
+            <figure class="post-full-image" style="background-image: url(/asssets/images/1400X800(bg_image).png)">
+            </figure>
+            
+
+            <section class="post-full-content">
+                <div class="kg-card-markdown">
+                    <h1 id="2104">2104</h1>
+
+<h2 id="문제">문제</h2>
+
+<p>크기가 N(1≤N≤100,000)인 1차원 배열 A[1], …, A[N]이 있다. 어떤 i, j(1≤i≤j≤N)에 대한 점수는, (A[i]+…+A[j])×Min{A[i], …, A[j]}가 된다. 즉, i부터 j까지의 합에다가 i부터 j까지의 최솟값을 곱한 것이 점수가 된다.</p>
+
+<p>배열이 주어졌을 때, 최대의 점수를 갖는 부분배열을 골라내는 프로그램을 작성하시오.</p>
+
+<h2 id="입력">입력</h2>
+
+<p>첫째 줄에 정수 N이 주어진다. 다음 줄에는 A[1], …, A[N]을 나타내는 정수들이 주어진다. 각각의 정수들은 음이 아닌 값을 가지며, 1,000,000을 넘지 않는다.</p>
+
+<h2 id="출력">출력</h2>
+
+<p>첫째 줄에 최대 점수를 출력한다.</p>
+
+<h2 id="코드">코드</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">cal</span><span class="p">(</span><span class="n">List</span><span class="p">)</span> <span class="p">:</span> <span class="k">return</span> <span class="nb">min</span><span class="p">(</span><span class="n">List</span><span class="p">)</span> <span class="o">*</span> <span class="nb">sum</span><span class="p">(</span><span class="n">List</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">check_score</span><span class="p">(</span><span class="n">List</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">List</span><span class="p">)</span>
+    <span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">List</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">length</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">:</span> <span class="k">return</span> <span class="mi">0</span>
+    <span class="k">if</span> <span class="n">length</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">:</span> <span class="k">return</span> <span class="n">List</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span>
+
+    <span class="n">idx</span> <span class="o">=</span> <span class="n">length</span><span class="o">//</span><span class="mi">2</span>
+    <span class="n">NO1</span> <span class="o">=</span> <span class="n">List</span><span class="p">[:</span><span class="n">idx</span><span class="p">]</span>
+    <span class="n">NO2</span> <span class="o">=</span> <span class="n">List</span><span class="p">[</span><span class="n">idx</span><span class="o">+</span><span class="mi">1</span><span class="p">:]</span>
+
+    <span class="n">rightidx</span><span class="p">,</span> <span class="n">leftidx</span> <span class="o">=</span> <span class="n">idx</span><span class="p">,</span> <span class="n">idx</span>
+    <span class="k">while</span> <span class="n">rightidx</span> <span class="o">&lt;</span> <span class="n">length</span> <span class="ow">and</span> <span class="n">List</span><span class="p">[</span><span class="n">rightidx</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">List</span><span class="p">[</span><span class="n">idx</span><span class="p">]:</span>
+        <span class="n">rightidx</span> <span class="o">+=</span> <span class="mi">1</span>
+
+    <span class="k">while</span> <span class="n">List</span><span class="p">[</span><span class="n">leftidx</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">List</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="ow">and</span> <span class="n">leftidx</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">leftidx</span> <span class="o">-=</span> <span class="mi">1</span>
+
+    <span class="k">if</span> <span class="n">rightidx</span> <span class="o">==</span> <span class="n">length</span> <span class="p">:</span> <span class="n">NO3</span> <span class="o">=</span> <span class="n">List</span><span class="p">[</span><span class="n">leftidx</span><span class="o">+</span><span class="mi">1</span><span class="p">:]</span>
+    <span class="k">else</span> <span class="p">:</span> <span class="n">NO3</span> <span class="o">=</span> <span class="n">List</span><span class="p">[</span><span class="n">leftidx</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span><span class="n">rightidx</span><span class="p">]</span>
+
+    <span class="n">score1</span> <span class="o">=</span> <span class="n">check_score</span><span class="p">(</span><span class="n">NO1</span><span class="p">)</span>
+    <span class="n">score2</span> <span class="o">=</span> <span class="n">check_score</span><span class="p">(</span><span class="n">NO2</span><span class="p">)</span>
+    <span class="n">score3</span> <span class="o">=</span> <span class="n">cal</span><span class="p">(</span><span class="n">NO3</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="nb">max</span><span class="p">(</span><span class="n">score1</span><span class="p">,</span> <span class="n">score3</span><span class="p">,</span> <span class="n">score2</span><span class="p">)</span>
+
+<span class="n">N</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()))</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">check_score</span><span class="p">(</span><span class="n">A</span><span class="p">))</span>
+</code></pre></div></div>
+
+<h1 id="2630">2630</h1>
+
+<h2 id="문제-1">문제</h2>
+
+<p>아래 &lt;그림 1&gt;과 같이 여러개의 정사각형칸들로 이루어진 정사각형 모양의 종이가 주어져 있고, 각 정사각형들은 하얀색으로 칠해져 있거나 파란색으로 칠해져 있다. 주어진 종이를 일정한 규칙에 따라 잘라서 다양한 크기를 가진 정사각형 모양의 하얀색 또는 파란색 색종이를 만들려고 한다.</p>
+
+<p><img src="https://www.acmicpc.net/upload/images/bwxBxc7ghGOedQfiT3p94KYj1y9aLR.png" alt="img" /></p>
+
+<p>전체 종이의 크기가 N×N(N=2k, k는 1 이상 7 이하의 자연수) 이라면 종이를 자르는 규칙은 다음과 같다.</p>
+
+<p>전체 종이가 모두 같은 색으로 칠해져 있지 않으면 가로와 세로로 중간 부분을 잘라서 &lt;그림 2&gt;의 I, II, III, IV와 같이 똑같은 크기의 네 개의 N/2 × N/2색종이로 나눈다. 나누어진 종이 I, II, III, IV 각각에 대해서도 앞에서와 마찬가지로 모두 같은 색으로 칠해져 있지 않으면 같은 방법으로 똑같은 크기의 네 개의 색종이로 나눈다. 이와 같은 과정을 잘라진 종이가 모두 하얀색 또는 모두 파란색으로 칠해져 있거나, 하나의 정사각형 칸이 되어 더 이상 자를 수 없을 때까지 반복한다.</p>
+
+<p>위와 같은 규칙에 따라 잘랐을 때 &lt;그림 3&gt;은 &lt;그림 1&gt;의 종이를 처음 나눈 후의 상태를, &lt;그림 4&gt;는 두 번째 나눈 후의 상태를, &lt;그림 5&gt;는 최종적으로 만들어진 다양한 크기의 9장의 하얀색 색종이와 7장의 파란색 색종이를 보여주고 있다.</p>
+
+<p><img src="https://www.acmicpc.net/upload/images/VHJpKWQDv.png" alt="img" /></p>
+
+<p>입력으로 주어진 종이의 한 변의 길이 N과 각 정사각형칸의 색(하얀색 또는 파란색)이 주어질 때 잘라진 하얀색 색종이와 파란색 색종이의 개수를 구하는 프로그램을 작성하시오.</p>
+
+<h2 id="입력-1">입력</h2>
+
+<p>첫째 줄에는 전체 종이의 한 변의 길이 N이 주어져 있다. N은 2, 4, 8, 16, 32, 64, 128 중 하나이다. 색종이의 각 가로줄의 정사각형칸들의 색이 윗줄부터 차례로 둘째 줄부터 마지막 줄까지 주어진다. 하얀색으로 칠해진 칸은 0, 파란색으로 칠해진 칸은 1로 주어지며, 각 숫자 사이에는 빈칸이 하나씩 있다.</p>
+
+<h2 id="출력-1">출력</h2>
+
+<p>첫째 줄에는 잘라진 햐얀색 색종이의 개수를 출력하고, 둘째 줄에는 파란색 색종이의 개수를 출력한다.</p>
+
+<h2 id="코드-1">코드</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">counting</span><span class="p">(</span><span class="n">Square</span><span class="p">):</span>
+    <span class="s">"""
+    basecase : 정사각형 요소가 모두 한개로 통일 되어있다면, 그 수에 따라 결과값을 리턴한다
+    1. 정사각형을 4등분으로 쪼갠다
+    2. 각각의 쪼갠 사각형에 counting을 적용한다
+    3. 카운팅으로 모인 수들을 더해서 return 한다
+    """</span>
+    <span class="n">No1</span> <span class="o">=</span> <span class="bp">False</span>
+    <span class="n">No0</span> <span class="o">=</span> <span class="bp">False</span>
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">Square</span><span class="p">:</span>
+        <span class="k">if</span> <span class="mi">1</span> <span class="ow">in</span> <span class="n">line</span> <span class="p">:</span> <span class="n">No1</span> <span class="o">=</span> <span class="bp">True</span>
+        <span class="k">if</span> <span class="mi">0</span> <span class="ow">in</span> <span class="n">line</span> <span class="p">:</span> <span class="n">No0</span> <span class="o">=</span> <span class="bp">True</span>
+
+    <span class="k">if</span> <span class="n">No1</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">No0</span> <span class="p">:</span> <span class="k">return</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">No1</span> <span class="ow">and</span> <span class="n">No0</span> <span class="p">:</span> <span class="k">return</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
+    <span class="c">#여기까지 basecase</span>
+
+    <span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">Square</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">length</span> <span class="o">//</span> <span class="mi">2</span>
+
+    <span class="n">Square1</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">Square2</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">Square3</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">Square4</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+        <span class="n">Square1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Square</span><span class="p">[</span><span class="n">i</span><span class="p">][:</span><span class="n">x</span><span class="p">])</span>
+        <span class="n">Square2</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Square</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">x</span><span class="p">:])</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">length</span><span class="p">):</span>
+        <span class="n">Square3</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Square</span><span class="p">[</span><span class="n">i</span><span class="p">][:</span><span class="n">x</span><span class="p">])</span>
+        <span class="n">Square4</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Square</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">x</span><span class="p">:])</span>
+    <span class="c">#쪼개기 완료</span>
+
+    <span class="n">count1</span><span class="p">,</span> <span class="n">count2</span><span class="p">,</span> <span class="n">count3</span><span class="p">,</span> <span class="n">count4</span> <span class="o">=</span> <span class="n">counting</span><span class="p">(</span><span class="n">Square1</span><span class="p">),</span> <span class="n">counting</span><span class="p">(</span><span class="n">Square2</span><span class="p">),</span> <span class="n">counting</span><span class="p">(</span><span class="n">Square3</span><span class="p">),</span> <span class="n">counting</span><span class="p">(</span><span class="n">Square4</span><span class="p">)</span>
+
+    <span class="n">num_of_Zero</span> <span class="o">=</span> <span class="n">count1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">count2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">count3</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">count4</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">num_of_One</span> <span class="o">=</span> <span class="n">count1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">count2</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">count3</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">count4</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+
+    <span class="k">return</span><span class="p">([</span><span class="n">num_of_Zero</span><span class="p">,</span> <span class="n">num_of_One</span><span class="p">])</span>
+
+
+
+
+
+
+<span class="n">N</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+
+<span class="n">shape</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+    <span class="n">shape</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())))</span>
+
+<span class="n">answer</span> <span class="o">=</span> <span class="n">counting</span><span class="p">(</span><span class="n">shape</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">answer</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="n">answer</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</code></pre></div></div>
+
+<h1 id="18222">18222</h1>
+
+<h2 id="문제-2">문제</h2>
+
+<p>0과 1로 이루어진 길이가 무한한 문자열 <em>X</em>가 있다. 이 문자열은 다음과 같은 과정으로 만들어진다.</p>
+
+<ol>
+  <li><em>X</em>는 맨 처음에 “0”으로 시작한다.</li>
+  <li><em>X</em>에서 0을 1로, 1을 0으로 뒤바꾼 문자열 <em>X’</em>을 만든다.</li>
+  <li><em>X</em>의 뒤에 <em>X’</em>를 붙인 문자열을 <em>X</em>로 다시 정의한다.</li>
+  <li>2~3의 과정을 무한히 반복한다.</li>
+</ol>
+
+<p>즉, <em>X</em>는 처음에 “0”으로 시작하여 “01”이 되고, “0110”이 되고, “01101001”이 되고, ⋯ 의 과정을 거쳐 다음과 같이 나타내어진다.</p>
+
+<p>“011010011001011010010110011010011001011001101001⋯⋯”</p>
+
+<p>자연수 <em>k</em>가 주어졌을 때 <em>X</em>의 <em>k</em>번째에는 무슨 문자가 오는지 구하여라.</p>
+
+<h2 id="입력-2">입력</h2>
+
+<p>첫 번째 줄에 자연수 <em>k</em> (1 ≤ <em>k</em> ≤ 1018) 가 주어진다.</p>
+
+<h2 id="출력-2">출력</h2>
+
+<p>첫 번째 줄에 <em>k</em>번째에 오는 문자를 출력하라.</p>
+
+<h2 id="코드-2">코드</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">idx</span><span class="p">(</span><span class="n">k</span><span class="p">):</span>
+    <span class="c">#basecase : k == 1</span>
+    <span class="k">if</span> <span class="n">k</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">:</span>
+        <span class="k">return</span> <span class="mi">0</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">n</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+            <span class="k">if</span> <span class="mi">2</span><span class="o">**</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">k</span> <span class="o">&lt;=</span> <span class="mi">2</span><span class="o">**</span><span class="n">n</span> <span class="p">:</span> <span class="k">break</span>
+            <span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="n">index</span> <span class="o">=</span> <span class="n">k</span><span class="o">-</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+        <span class="c">#print(index)</span>
+        <span class="k">return</span> <span class="mi">1</span><span class="o">-</span><span class="n">idx</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>
+
+<span class="n">k</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+</code></pre></div></div>
+
+<h1 id="5904">5904</h1>
+
+<p>Moo는 술자리에서 즐겁게 할 수 있는 게임이다. 이 게임은 Moo수열을 각 사람이 하나씩 순서대로 외치면 되는 게임이다.</p>
+
+<p>Moo 수열은 길이가 무한대이며, 다음과 같이 생겼다.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>m o o m o o o m o o m o o o o m o o m o o o m o o m o o o o o
+</code></pre></div></div>
+
+<p>Moo 수열은 다음과 같은 방법으로 재귀적으로 만들 수 있다. 먼저, S(0)을 길이가 3인 수열 “m o o”이라고 하자. 1보다 크거나 같은 모든 k에 대해서, S(k)는 S(k-1)과 o가 k+2개인 수열 “m o … o” 와 S(k-1)을 합쳐서 만들 수 있다.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>S(0) = "m o o"
+S(1) = "m o o m o o o m o o"
+S(2) = "m o o m o o o m o o m o o o o m o o m o o o m o o"
+</code></pre></div></div>
+
+<p>위와 같은 식으로 만들면, 길이가 무한대인 문자열을 만들 수 있으며, 그 수열을 Moo 수열이라고 한다.</p>
+
+<p>N이 주어졌을 때, Moo 수열의 N번째 글자를 구하는 프로그램을 작성하시오.</p>
+
+<h2 id="입력-3">입력</h2>
+
+<p>첫째 줄에 N (1 ≤ N ≤ 109)이 주어진다.</p>
+
+<h2 id="출력-3">출력</h2>
+
+<p>N번째 글자를 출력한다.</p>
+
+<h2 id="코드-3">코드</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">find_value_of_N</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">nums</span><span class="p">,</span> <span class="n">count</span><span class="p">):</span>
+    <span class="c">#print(N, nums, count)</span>
+    <span class="k">if</span> <span class="n">count</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">:</span> <span class="k">return</span> <span class="s">'moo'</span><span class="p">[</span><span class="n">N</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+    <span class="c">#basecase</span>
+
+    <span class="n">Bnum</span> <span class="o">=</span> <span class="n">nums</span><span class="o">-</span><span class="p">(</span><span class="n">count</span><span class="o">+</span><span class="mi">3</span><span class="p">)</span>
+    <span class="n">Bnum</span> <span class="o">//=</span> <span class="mi">2</span>
+    <span class="k">if</span> <span class="n">N</span> <span class="o">&lt;=</span> <span class="n">Bnum</span> <span class="p">:</span> <span class="k">return</span> <span class="n">find_value_of_N</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">Bnum</span><span class="p">,</span> <span class="n">count</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">N</span> <span class="o">==</span> <span class="n">Bnum</span><span class="o">+</span><span class="mi">1</span> <span class="p">:</span>  <span class="k">return</span> <span class="s">'m'</span>
+    <span class="k">elif</span> <span class="n">Bnum</span><span class="o">+</span><span class="mi">2</span> <span class="o">&lt;</span> <span class="n">N</span> <span class="o">&lt;=</span> <span class="n">nums</span> <span class="o">-</span> <span class="n">Bnum</span> <span class="p">:</span> <span class="k">return</span> <span class="s">'o'</span>
+    <span class="k">else</span> <span class="p">:</span> <span class="k">return</span> <span class="n">find_value_of_N</span><span class="p">(</span><span class="n">N</span><span class="o">-</span><span class="n">Bnum</span><span class="o">-</span><span class="mi">3</span><span class="o">-</span><span class="n">count</span><span class="p">,</span> <span class="n">Bnum</span><span class="p">,</span> <span class="n">count</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">N</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">nums</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="k">while</span> <span class="n">nums</span> <span class="o">&lt;</span> <span class="n">N</span><span class="p">:</span>
+    <span class="n">count</span><span class="o">+=</span><span class="mi">1</span>
+    <span class="n">nums</span> <span class="o">=</span> <span class="n">nums</span><span class="o">*</span><span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">count</span><span class="o">+</span><span class="mi">3</span><span class="p">)</span>
+
+
+<span class="k">print</span><span class="p">(</span><span class="n">find_value_of_N</span><span class="p">(</span><span class="n">N</span><span class="p">,</span><span class="n">nums</span><span class="p">,</span><span class="n">count</span><span class="p">))</span>
+</code></pre></div></div>
+
+                </div>
+            </section>
+
+            <!-- Email subscribe form at the bottom of the page -->
+            
+
+            <footer class="post-full-footer">
+                <!-- Everything inside the #author tags pulls data from the author -->
+                <!-- #author-->
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                <!-- /author  -->
+            </footer>
+
+            <!-- If you use Disqus comments, just uncomment this block.
+            The only thing you need to change is "test-apkdzgmqhj" - which
+            should be replaced with your own Disqus site-id. -->
+            
+
+        </article>
+
+    </div>
+</main>
+
+<!-- Links to Previous/Next posts -->
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+                
+                
+                
+                
+                    <article class="read-next-card"
+                        
+                            style="background-image: url(/assets/images/blog-cover.jpg)"
+                        
+                    >
+                        <header class="read-next-card-header">
+                            <small class="read-next-card-header-sitetitle">&mdash; SjMogakko.github.io &mdash;</small>
+                            
+                                <h3 class="read-next-card-header-title"><a href="/tag/ojaeo/">Ojaeo</a></h3>
+                            
+                        </header>
+                        <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
+</div>
+                        <div class="read-next-card-content">
+                            <ul>
+                                
+                                
+                                  
+                                
+                                  
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/first">2월 3주차 내용 정리</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                            </ul>
+                        </div>
+                        <footer class="read-next-card-footer">
+                            <a href="/tag/ojaeo/">
+                                
+                                    See all 1 posts  →
+                                
+                            </a>
+                        </footer>
+                    </article>
+                
+            
+
+            <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
+            
+                
+
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/Hyeonuk(revised)">
+                <div class="post-card-image" style="background-image: url(/assets/images/1400x800(bg_image).png)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/Hyeonuk(revised)">
+                <header class="post-card-header">
+                    
+                        
+                            
+                                <span class="post-card-tags">Hyeonuk</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">Second week of Mogakco</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    
+                        <p></p>
+                    
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                <span class="reading-time">
+                    
+                    
+                      1 min read
+                    
+                </span>
+            </footer>
+        </div>
+    </article>
+
+            
+
+            <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
+            
+                
+
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/Feb.last.md">
+                <div class="post-card-image" style="background-image: url(/assets/images/1400x800(bg_image).png)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/Feb.last.md">
+                <header class="post-card-header">
+                    
+                        
+                            
+                                <span class="post-card-tags">Hayeon</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">2월 마지막 주(코딩도장)</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    
+                        <p></p>
+                    
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                        <span class="post-card-author">
+                            <a href="/author/hayeon/">hayeonBaek</a>
+                        </span>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                <span class="reading-time">
+                    
+                    
+                      1 min read
+                    
+                </span>
+            </footer>
+        </div>
+    </article>
+
+            
+
+        </div>
+    </div>
+</aside>
+
+<!-- Floating header which appears on-scroll, included from includes/floating-header.hbs -->
+<div class="floating-header">
+    <div class="floating-header-logo">
+        <a href="/">
+            
+                <img src="/assets/images/favicon.png" alt="SjMogakko.github.io icon" />
+            
+            <span>SjMogakko.github.io</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">2월 4주차 백준 4문제 풀이</div>
+    <div class="floating-header-share">
+        <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
+</svg>
+</div>
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=2%EC%9B%94+4%EC%A3%BC%EC%B0%A8+%EB%B0%B1%EC%A4%80+4%EB%AC%B8%EC%A0%9C+%ED%92%80%EC%9D%B4&amp;url=https://SjMogakko.github.io/jasper2/second"
+            onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+
+        </a>
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://SjMogakko.github.io/jasper2/second"
+            onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
+
+        </a>
+    </div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+<!-- /post -->
+
+<!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
+
+
+        <!-- Previous/next page links - displayed on every page -->
+        
+
+        <!-- The footer at the very bottom of the screen -->
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="/">SjMogakko.github.io</a> &copy; 2021</section>
+                <section class="poweredby">Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> &
+                    <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> using
+                    <a href="https://github.com/jekyller/jasper2" target="_blank" rel="noopener">Jasper2</a></section>
+                <nav class="site-footer-nav">
+                    <a href="/">Latest Posts</a>
+                    
+                    
+                    <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- The big email subscribe modal content -->
+    
+
+    <!-- highlight.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-abap.min.js"></script>
+    <script>$(document).ready(function() {
+      $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block);
+      });
+    });</script>
+
+    <!-- jQuery + Fitvids, which makes all video embeds responsive -->
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://demo.ghost.io/assets/js/jquery.fitvids.js?v=724281a32e"></script>
+
+
+    <!-- Paginator increased to "infinit" in _config.yml -->
+    <!-- if paginator.posts  -->
+    <!-- <script>
+        var maxPages = parseInt('');
+    </script>
+    <script src="/assets/js/infinitescroll.js"></script> -->
+    <!-- /endif -->
+
+    
+
+
+    <!-- Add Google Analytics  -->
+    <!-- Google Analytics Tracking code -->
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+
+ </script>
+
+
+    <!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. -->
+    
+        <script>
+
+// NOTE: Scroll performance is poor in Safari
+// - this appears to be due to the events firing much more slowly in Safari.
+//   Dropping the scroll event and using only a raf loop results in smoother
+//   scrolling but continuous processing even when not scrolling
+$(document).ready(function () {
+    // Start fitVids
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    // End fitVids
+
+    var progressBar = document.querySelector('progress');
+    var header = document.querySelector('.floating-header');
+    var title = document.querySelector('.post-full-title');
+
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var ticking = false;
+
+    function onScroll() {
+        lastScrollY = window.scrollY;
+        requestTick();
+    }
+
+    function onResize() {
+        lastWindowHeight = window.innerHeight;
+        lastDocumentHeight = $(document).height();
+        requestTick();
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+        }
+        ticking = true;
+    }
+
+    function update() {
+        var trigger = title.getBoundingClientRect().top + window.scrollY;
+        var triggerOffset = title.offsetHeight + 35;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
+
+        // show/hide floating header
+        if (lastScrollY >= trigger + triggerOffset) {
+            header.classList.add('floating-active');
+        } else {
+            header.classList.remove('floating-active');
+        }
+
+        progressBar.setAttribute('max', progressMax);
+        progressBar.setAttribute('value', lastScrollY);
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onResize, false);
+
+    update();
+});
+</script>
+
+    
+
+    <!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag -->
+    <!-- ghost_foot -->
+
+</body>
+</html>

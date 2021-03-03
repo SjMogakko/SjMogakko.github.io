@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Document Settings -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Base Meta -->
+    <!-- dynamically fixing the title for tag/author pages -->
+
+
+
+    <title>2월 마지막 주(코딩도장)</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles'n'Scripts -->
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.edited.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/built/syntax.css" />
+    <!-- webfont -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css">
+    <!-- highlight.js -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <style>.hljs { background: none; }</style>
+
+    <!--[if IE]>
+        <style>
+            p, ol, ul{
+                width: 100%;
+            }
+            blockquote{
+                width: 100%;
+            }
+        </style>
+    <![endif]-->
+
+    <!-- This tag outputs SEO meta+structured data and other important settings -->
+    <meta name="description" content="세종대 새내기 모각코" />
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/png" />
+    <link rel="canonical" href="/Feb.last.md" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+
+     <!--title below is coming from _includes/dynamic_title-->
+    <meta property="og:site_name" content="SjMogakko.github.io" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="2월 마지막 주(코딩도장)" />
+    <meta property="og:description" content="코딩도장 책 Unit 10_ 상수 사용하기 (02-22) 리터럴 사용 시 주의: 문자열 -&gt; 큰 따옴표(%s), 문자하나-&gt;작은 따옴표(%c) 정수 리터럴 구분 10진수 8진수 16진수 서식 지정자(format specifier) %d 0%o 0x%X 진수 변환 10진수 2진수 8진수 16진수 0 0000 00 0 1 0001 01 1 2 0010 02 2 : :  " />
+    <meta property="og:url" content="/Feb.last.md" />
+    <meta property="og:image" content="/assets/images/1400x800(bg_image).png" />
+    <meta property="article:publisher" content="https://www.facebook.com/" />
+    <meta property="article:author" content="https://www.facebook.com/" />
+    <meta property="article:published_time" content="2021-02-28T23:13:00+09:00" />
+    <meta property="article:modified_time" content="2021-02-28T23:13:00+09:00" />
+    <meta property="article:tag" content="Hayeon" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="2월 마지막 주(코딩도장)" />
+    <meta name="twitter:description" content="코딩도장 책 Unit 10_ 상수 사용하기 (02-22) 리터럴 사용 시 주의: 문자열 -&gt; 큰 따옴표(%s), 문자하나-&gt;작은 따옴표(%c) 정수 리터럴 구분 10진수 8진수 16진수 서식 지정자(format specifier) %d 0%o 0x%X 진수 변환 10진수 2진수 8진수 16진수 0 0000 00 0 1 0001 01 1 2 0010 02 2 : :  " />
+    <meta name="twitter:url" content="/" />
+    <meta name="twitter:image" content="/assets/images/1400x800(bg_image).png" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="SjMogakko.github.io" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="Hayeon" />
+    <meta name="twitter:site" content="@" />
+    <meta name="twitter:creator" content="@" />
+    <meta property="og:image:width" content="1400" />
+    <meta property="og:image:height" content="933" />
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Website",
+    "publisher": {
+        "@type": "Organization",
+        "name": "SjMogakko.github.io",
+        "logo": "/assets/images/blog-icon.png"
+    },
+    "url": "/Feb.last.md",
+    "image": {
+        "@type": "ImageObject",
+        "url": "/assets/images/1400x800(bg_image).png",
+        "width": 2000,
+        "height": 666
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/Feb.last.md"
+    },
+    "description": "코딩도장 책 Unit 10_ 상수 사용하기 (02-22) 리터럴 사용 시 주의: 문자열 -&gt; 큰 따옴표(%s), 문자하나-&gt;작은 따옴표(%c) 정수 리터럴 구분 10진수 8진수 16진수 서식 지정자(format specifier) %d 0%o 0x%X 진수 변환 10진수 2진수 8진수 16진수 0 0000 00 0 1 0001 01 1 2 0010 02 2 : :  "
+}
+    </script>
+
+    <!-- <script type="text/javascript" src="https://demo.ghost.io/public/ghost-sdk.min.js?v=724281a32e"></script>
+    <script type="text/javascript">
+    ghost.init({
+    	clientId: "ghost-frontend",
+    	clientSecret: "f84a07a72b17"
+    });
+    </script> -->
+
+    <meta name="generator" content="Jekyll 3.6.2" />
+    <link rel="alternate" type="application/rss+xml" title="2월 마지막 주(코딩도장)" href="/feed.xml" />
+
+
+</head>
+<body class="post-template">
+
+    <div class="site-wrapper">
+        <!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
+        <!-- default -->
+
+<!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template -->
+
+<header class="site-header outer">
+    <div class="inner">
+        <nav class="site-nav">
+    <div class="site-nav-left">
+        
+            
+                <a class="site-nav-logo" href="/"><img src="/assets/images/blog-icon.png" alt="SjMogakko.github.io" /></a>
+            
+        
+        
+            <ul class="nav" role="menu">
+    <li class="nav-home" role="menuitem"><a href="/">Home</a></li>
+    <li class="nav-HyeonsuRyu" role="menuitem"><a href="/tag/HyeonsuRyu/">류현수</a></li>
+    <li class="nav-Hayeon" role="menuitem"><a href="/tag/Hayeon/">백하연</a></li>
+    <li class="nav-Minsung" role="menuitem"><a href="/tag/Minsung/">신민성</a></li>
+    <li class="nav-Hyeonuk" role="menuitem"><a href="/tag/Hyeonuk/">신현욱</a></li>
+    <li class="nav-Seohyun" role="menuitem"><a href="/tag/Seohyun/">양서현</a></li>
+    <li class="nav-Ojaeo" role="menuitem"><a href="/tag/Ojaeo/">오재오</a></li>
+    <li class="nav-Jiwon" role="menuitem"><a href="/tag/Jiwon/">유지원</a></li>
+    <li class="nav-Seongeun" role="menuitem"><a href="/tag/Seongeun/">이성은</a></li>
+</ul>
+
+        
+    </div>
+    <div class="site-nav-right">
+        <div class="social-links">
+            
+            
+        </div>
+        
+    </div>
+</nav>
+
+    </div>
+</header>
+
+<!-- Everything inside the #post tags pulls data from the post -->
+<!-- #post -->
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+
+        <article class="post-full  tag-hayeon post ">
+
+            <header class="post-full-header">
+                <section class="post-full-meta">
+                    <time class="post-full-meta-date" datetime="28 February 2021">28 February 2021</time>
+                    
+                        <span class="date-divider">/</span>
+                        
+                            
+                               <a href='/tag/hayeon/'>HAYEON</a>
+                            
+                        
+                    
+                </section>
+                <h1 class="post-full-title">2월 마지막 주(코딩도장)</h1>
+            </header>
+
+            
+            <figure class="post-full-image" style="background-image: url(/assets/images/1400x800(bg_image).png)">
+            </figure>
+            
+
+            <section class="post-full-content">
+                <div class="kg-card-markdown">
+                    <h1 id="코딩도장-책-unit-10_-상수-사용하기-02-22">코딩도장 책 Unit 10_ 상수 사용하기 (02-22)</h1>
+
+<ul>
+  <li>
+    <p>리터럴 사용 시 주의:</p>
+
+    <p>문자열 -&gt; 큰 따옴표(%s), 문자하나-&gt;작은 따옴표(%c)</p>
+  </li>
+  <li>
+    <p>정수 리터럴</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th style="text-align: center">구분</th>
+          <th style="text-align: center">10진수</th>
+          <th style="text-align: center">8진수</th>
+          <th style="text-align: center">16진수</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: center">서식 지정자(format specifier)</td>
+          <td style="text-align: center">%d</td>
+          <td style="text-align: center">0%o</td>
+          <td style="text-align: center">0x%X</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<p>진수 변환</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">10진수</th>
+      <th style="text-align: center">2진수</th>
+      <th style="text-align: center">8진수</th>
+      <th style="text-align: center">16진수</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0000</td>
+      <td style="text-align: center">00</td>
+      <td style="text-align: center">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0001</td>
+      <td style="text-align: center">01</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">0010</td>
+      <td style="text-align: center">02</td>
+      <td style="text-align: center">2</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">:</td>
+      <td style="text-align: center">:</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">:</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">7</td>
+      <td style="text-align: center">0111</td>
+      <td style="text-align: center">07</td>
+      <td style="text-align: center">7</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">8</td>
+      <td style="text-align: center">1000</td>
+      <td style="text-align: center">10</td>
+      <td style="text-align: center">8</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">9</td>
+      <td style="text-align: center">1001</td>
+      <td style="text-align: center">11</td>
+      <td style="text-align: center">9</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">10</td>
+      <td style="text-align: center">1010</td>
+      <td style="text-align: center">12</td>
+      <td style="text-align: center">A</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">11</td>
+      <td style="text-align: center">1011</td>
+      <td style="text-align: center">13</td>
+      <td style="text-align: center">B</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">:</td>
+      <td style="text-align: center">:</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">:</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">15</td>
+      <td style="text-align: center">1111</td>
+      <td style="text-align: center">17</td>
+      <td style="text-align: center">F</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">16</td>
+      <td style="text-align: center">10000</td>
+      <td style="text-align: center">20</td>
+      <td style="text-align: center">10</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">17</td>
+      <td style="text-align: center">10001</td>
+      <td style="text-align: center">21</td>
+      <td style="text-align: center">11</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>마크다운 표 가운데 정렬 ==
+|:–:|</p>
+
+<p>실수 리터럴(끝에)
+float|long double|지수표기
+|:–:|:–:|:–:|
+f / F|l \ L|e / E</p>
+
+<p>ex)</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>printf(("%f",0.1f), printf("%f",0.1F)
+</code></pre></div></div>
+
+<h2 id="상수-사용하기">상수 사용하기</h2>
+
+<ul>
+  <li>
+    <p><strong>const 자료형 상수이름 =값;</strong></p>
+
+    <p>Python 과 달리 상수 선언 한번하면 값 바꿀 수 x</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   const int con1=1;
+   con1=2;
+
+   ERROR!!!
+</code></pre></div>    </div>
+
+    <p>추가&gt; 자료형 const 상수이름=값; 도 가능</p>
+  </li>
+</ul>
+
+<h1 id="unit-11_-입력-값을-변수에-저장하기-02-23">Unit 11_ 입력 값을 변수에 저장하기 (02-23)</h1>
+
+<ol>
+  <li>
+    <p>정수/실수 입력받기(서식지정자만 바꿔주면 됌.)</p>
+
+    <p><strong>scnaf(서식 지정자, 변수의 주소);</strong></p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> #define _CRT_SECURE_NO_WARNINGS
+ #include &lt;stdio.h&gt;
+
+ int main()
+ {
+     int num1;
+
+     printf("점수를 입력하세요:");
+     scanf("%d", &amp;num1);
+     // 표준 입력을 받아서 그 메모리 주소를 변수에 저장(변수 초기화)
+
+     printf("%d\n", num1);
+
+     return 0;
+
+ }
+
+</code></pre></div>    </div>
+    <p>scanf 는 나온지 오래된 함수라 입력값의 길이를 설정할 수가 없어 보안에 취약하므로 #define _CRT….을 써서 보안경고로 인한 컴파일 에러를 방지하는 코드를 써줘야 한다.</p>
+  </li>
+  <li>
+    <p>문자 입력받기</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> #define _CRT_SECURE_NO_WARNINGS
+ #include  &lt;stdio.h&gt;
+
+ int main()
+ {
+     char c1;
+
+     printf("문자입력: ");
+     scanf("%c", &amp;c1);
+
+     printf("%c\n", c1);
+
+     return 0;
+ }
+</code></pre></div>    </div>
+    <p>scanf 함수 대신 getchar 함수나 putchar 함수를 사용해도 문자를 입력받을 수 있다.
+```
+  #include <stdio.h></stdio.h></p>
+
+    <p>int main()
+  {
+      char c1=getchar();
+      printf(“c\n”, c1);</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> return 0;   }
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+# Unit 12_ 덧셈, 뺄셈하기 (02-23)
+
+파이썬과의 차이점
+</code></pre></div></div>
+<p>#include <stdio.h></stdio.h></p>
+
+<p>int main()
+{
+    int num1;
+    int num2;</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>num1 = 1 + 2;
+num2 = 1 - 2;
+
+printf(num1);
+printf(num2);
+
+return 0; } ``` 이러면 출력 안 됨. 무조건 서식 지정자 사용해야. ``` #include &lt;stdio.h&gt;
+</code></pre></div></div>
+
+<p>int main()
+{
+    int num1;
+    int num2;</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>num1 = 1 + 2;
+num2 = 1 - 2;
+
+printf("%d\n", num1);
+printf("%d\n", num2);
+
+return 0; } ```
+</code></pre></div></div>
+
+<h1 id="unit-13_-증가-감소-연산자-사용하기-02-23">Unit 13_ 증가, 감소 연산자 사용하기 (02-23)</h1>
+
+<p>변수 ++;  or ++변수; —–&gt; 값을 1 증가시킴</p>
+
+<p>변수 –; or –변수; —–&gt; 값을 1 감소시킴</p>
+
+<p><strong>후위 연산자</strong> (연산을 나중에 처리한다.)</p>
+<ol>
+  <li>A 변수의 값을 B 변수에 할당</li>
+  <li>B는 그대로 있고 A만 +1(-1)</li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#include &lt;stdio.h&gt;
+
+int main()
+{
+    int num1=2;
+    int num2;
+
+    num2=num1++
+
+    printf("%d", num2);
+
+    return 0;
+}
+</code></pre></div></div>
+<p>num1은 2, num2는 3</p>
+
+<p><strong>전위 연산자</strong> (연산을 먼저 처리한다.)</p>
+<ol>
+  <li>A에 +1(-1)</li>
+  <li>A 변수의 값을 B에 할당</li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#include &lt;stdio.h&gt;
+
+int main()
+{
+    int num1=2;
+    int num2;
+
+    num2=++num1
+
+    printf("%d", num2);
+
+    return 0;
+}
+</code></pre></div></div>
+
+<p>num1도 3, num2도 3</p>
+
+<h1 id="unit14_-곱셈나눗셈하기-02-24">Unit14_ 곱셈,나눗셈하기 (02-24)</h1>
+
+<ol>
+  <li>
+    <p>python에서 7/2-&gt;3.5
+c에서 7/2하면 3 나옴</p>
+  </li>
+  <li>C언어에서는 정수끼리 나눗셈을 하면 결과도 정수가 나온다.
+(살수끼리 나눗셈을 하면 소수점 이하 자리까지 계산된다.)</li>
+  <li>
+    <p>정수를 그냥 0으로 나누면 컴파일 에러발생(중단)</p>
+
+    <p>0을 변수에 저장해서 0으로 나누면 중단은 되지 않으나 실행창에서 에러 뜸.</p>
+
+    <p>but (실수 나눗셈에서) 변수에 0.0을 저장해서 0으로 나누면 실행이 중단되지 않고 inf 무한대가  나온다.(p1336 참고)</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> #include &lt;stdio.h&gt;
+
+ int main()
+ {
+     float num1=3.0f
+     float num2=0.0f
+     float num3;
+
+     num3=num1/num2;
+
+     printf("%f",num3);
+
+     return 0;
+ }
+
+</code></pre></div>    </div>
+    <p>-&gt; inf 출력</p>
+  </li>
+</ol>
+
+<참고>
+
+0/10=0
+
+10/0=ERROR
+
+**실수계산에서는 계산결과에서 오차가 발생한다.(코딩도장p1333참고)**
+
+
+# Unit 15_나머지 연산하기 (02-24)
+
+1. 나머지연산(%)은 정수에서만 사용가능. 실수에서는 사용 불가능 (ERROR 발생!. but<math.h> 해더 파일을 사용하면 가능.p197참조)
+
+2. 음수의 나머지 연산.
+    a/b에서 a의 부호를 따른다.(b 부호는 무시)
+
+
+# Unit 16_자료형의 확장과 축소 (02-24)
+
+## 형 확장
+정수와 실수를 같이 연산하면 출력은 실수형으로 된다. (표현범위가 큰 쪽)
+
+크기가 다른 정수끼리 연산했을때도 마찬가지.
+
+ex)
+int(4byte)형과 longlong(8byte)을 같이 썼을 때-&gt; longlong으로 출력.
+
+## 형 축소(값 손실 발생)
+char과 int를 함께 연산한 뒤 char에 저장하면 char 보다 큰 숫자는 저장할 수 없다.
+
+ex)
+
+char=28;
+int=100000002;
+char이 1byte니까 int형에서 1byte만 유효하고  나머지는 버려진다. (이진수)
+
+100000002(10)-&gt;0011 1011 1001 1010 1100 1010 0000 0010(2) 에서 뒤에 1byte인 0000 0010 만 사용.
+
+$$ 마크다운 내부 링크 걸고 싶으면[보여질 글씨](#해더 이름) 쓰면 된다. 해더 이름의 띄어쓰기는'_'로 처리한다.$$
+
+
+# Unit17_ if 조건문 (02-25)
+
+1. 문법  
+if (조건식)  
+    ```
+    if (num1==10)
+    {
+        printf("10입니다.");
+    }
+    ```
+
+    (뒤에 ; 안씀)
+
+    만약 if 조건문 끝에 세미콜론이 붙어있으면 if는 제대로 동작하지 않고 뒤에 오는 코드가 무조건 실행되어 버린다.
+
+    ```
+    if (num1==10);
+
+    printf("10입니다.");
+    ```
+    if와 printf는 전혀 관계가 없이 떨어진 상태가 됨-&gt;조건식이 어떻든 printf는 항상 실행된다.  
+
+    <span style="color:red">주의</span>  
+    if 뒤에 세미콜론을 붙여도 컴파일 에러가 나지 않기 때문에 문제를 발견하기가 쉽지 않다 조심하자  
+
+
+
+    # Unit 18_else 사용하여 분기하기(02-25)
+
+    else도 세미콜론을 붙이지 않는다!!
+    세미콜론 붙이면 if 의 결과와는 관계없이 항상 실현됨!!!!!
+
+    C에서는 0을 거짓, 0이 아닐 때를 참으로 동작함.
+    ```
+    #include <stdio.h>
+
+    int main()
+    {
+        if (2)
+        {
+            printf("참");
+        }
+        else
+        {
+            printf("거짓");
+        }
+        return 0;
+    }
+```
+출력:참  
+
+
+    ```
+    #include <stdio.h>
+
+    int main()
+    {
+        if (0)
+        {
+            printf("참");
+        }
+        else
+        {
+            printf("거짓");
+        }
+        return 0;
+    }
+```  
+출력: 거짓
+
+++ 경고 수준 조정 Wparenthese
+(p228 참고)
+
+# Unit 19_ else if를 사용하여 여러 방향으로 분기 (02-25)
+```
+    else if (조건식)  //else if에 조건식을 지정하지 않으면 컴파일 에러 발생
+```
+if 조건문 안에 if 조건문은 63개 까지 중첩할 수 있다.  
+
+
+# Unit 20_ 비교 연산자와 삼항 연산자 사용
+## 1. 조건부 연산자
+?:   
+조건식이 참이면 ':'앞의 값을 반환, 거짓이면 ':' 뒤의 값을 반환  
+ex) x ? a : b
+
+## 2. 비교 연산자
+참이면 1, 거짓이면 0 출력
+```
+#include <stdio.h>
+
+int main()
+{
+    int num1 = 10;
+
+    printf("%d\n", num1 == 10);
+    printf("%d\n", num1 != 10);
+
+    return 0;
+}
+```
+한 숫자만 not 연산하기
+```
+if (!num1)
+printf("참");
+```
+
+## 3. 삼항 연산자
+```
+#include <stdio.h>
+int main()
+{
+    int num1=5;
+    int num2;
+
+    if (num1)
+    num2=100;
+
+    else
+    num2=200;
+
+    printf("%d\n", num2);
+
+    return 0;
+}
+```
+출력:100
+
+num1에 저장된 5는 0이 아닌 값이므로 참이다. 따라서 num2에는 100이 할당 됨.  
+```
+#include <stdio.h>
+int main()
+{
+    int num1=5;
+    int num2;
+
+    num2=num1 ? 100 : 200;
+    //num1이 참이면(0이아니면) num2=100, num1이 거짓이면(0이면) num2=200
+
+    printf("%d\n", num2);
+
+    return 0;
+}
+```  
+---&gt;삼항 연산자는 if , else로 분기하는 부분을 한 줄로 간단하게 줄일 수 있다.
+
+```
+num2=(num1==10) ? 100 : 200;
+```
+과 같이 쓸수도 있다. num1==10일때는 num2=100.
+
+# Unit 21_ 논리 연산자
+
+연산자|설명
+|:--:|:--:|
+&amp;&amp;|AND
+kk|OR
+!|NOT
+
+(k==|)
+
+1. &amp;&amp;은 두 값이 모두 참이라야 결과가 참.  
+- 2&amp;&amp;0 이면 거짓임(0 있으니까)  
+- 2&amp;&amp;3은 참임( 0없으니까)
+
+2. ||은 두 값 중 하나만 참이라도 결과가 참이 나옴.   
+0||0만 거짓임. 0출력
+
+```
+printf(~~~~
+
+"%d",!1  // 원래의 반대.1은 참인데 !1이니까 거짓임-&gt;0출력
+"%d",!0  // 0은 거짓인데 !0이니까 참-&gt; 1출력
+"%d",!3 // 3은 참인데 !3이니까 거짓-&gt;0출력
+```
+
+# Unit 22_불 자료형
+
+
+1. <stdbool.h> 해더 파일 이용.
+- bool, true, false 가 저장 되어 있음.
+- 0은 거짓, 0아니면 참으로 했지만 이 해더파일 사용하면 true를 참으로 false를 거짓으로 나타낼 수 있다.  
+    ```
+    if (b1==true)
+        printf("참");
+    ```
+
+- 하지만 출력할 때는 정수 출력처럼 %d 사용한다.
+    ```
+    printf("%d", true&amp;&amp;true);
+    ```
+2. 1byte 임  *(int는 4byte)*
+
+3. 전용 서식  지정자 x.  
+
+++삼항 연산자는 조건식 뿐만아니라 참, 거짓 값으로도 판단할 수 o
+```
+#include <stdio.h>
+#include <stdbool.h>
+
+int main()
+{
+    bool b1 = true;
+    printf(b1 ? "true" : "faflse");
+    return 0;
+}
+```
+--&gt;출력: true  
+
+다른 자료형은 해더파일 없이 사용할 수 있는데 bool은 해더 파일을 포함하는 이유?  
+char, int등의 자료형은 C언어가 나올 떄부터 있었지만 bool은 나중에 추가된 자료형이기 때문이다.  
+해더 파일 없이 불 자료형을 사용하려면 _Bool로 선언해야 한다.   
+
+# Unit 23_비트 연산자 (02-25, 02-27)
+연산자|설명
+|:--:|:--:|
+&amp;|비트 AND
+kk|비트OR
+^|비트XOR
+~|비트NOT
+&lt;&lt;|비트를 왼쪽시프트
+aa|비트 오른쪽 시프트
+&amp;=|비트 AND연산후 할당
+k=|비트OR연산후 할당
+^=|비트XOR연산후 할당
+&lt;&lt;=|비트왼쪽시프트할당
+aa=|비트오른쪽시프트할당
+
+( k= | , a = &gt;)  
+
+<설명>
+1. ^ 연산자(비트 XOR) 두 비트가 다를 때 (참)1임  
+    따라서 1^1, 0^0 일때는 모두 0이다.
+2. ~연산자(비트 NOT) 0은 1로 1은 0으로 바꾼다.(비트 반전)
+
+<주의>  
+부호 영향 받지 않도록(맨 처음 비트가 1이면 음수) unsigned char을 사용한다.
+```
+unsigned char num1= 162;
+```
+
+num1=num1&amp;5  
+&lt;=&gt; num1&amp;=5
+# Unit 24_비트 연산자 응용(02-25, 02-27)
+1. 시프트 연산으로 자릿수를 넘어설 때는 과감하게 버린다.
+
+    ```
+    unsigned char num1=240;       //1111 0000
+    unsigned char num3;
+
+    num3==num1&lt;&lt;2;               //1100 0000
+    ```
+    -&gt;첫째 자리나 마지막 자리를 넘어서는 비트는 그대로 사라짐.
+
+2. 부호 있는 자료형의 비트 연산  
+    unsigned일 때는 시프트 연산 후 모자라는 공간은 모두 부호비트의 값인 0으로 채웠다.  
+    마찬가지로 음수일 때도 모자라는 공간은 (맨 처음=시프트하기전이 아니라 지금 연산의)부호 비트인 1로 모자라는 공간을 채운다.
+
+    1000 1000&lt;&lt;1 하면 1000 1000이 음수여서 모자라는 공간을 1로 채우는게 아니라, 한칸 시프트 하면 맨 앞자리가 0이 오니까 양수로 판단해서 모자라는 공간을 0으로 채운다.
+    -&gt;0001 0000
+
+    ## !!헷갈리는 연산!!
+    1000 1000 &lt;&lt;1 =0001 0000  
+    1000 0000 &gt;&gt;1 =1100 0000
+
+
+3. 비트 켜고 끄기
+
+- 플래그의 비트 켜기  
+    **플래그|=마스크**
+    (여기서 마스크는 10진수)
+
+    ```
+    unsigend char flag = 0;
+
+    flag |=1;
+
+    ```
+
+
+- 플래그의 비트 끄기  
+    **플래그 &amp;=마스크**
+    ```
+    unsigend char flag = 7; //0000 0111
+
+    flag &amp;=~2;    //1111 1101 마스크  값 2의 비트틑 뒤집은 뒤 비트 AND로 일곱번째 비트를 끔.
+    ```
+
+    --&gt; &amp;를 사용할 때 : 1은 아무 능력이 없음. 원래 값을 유지하는 기능 뿐임.   
+            0을 사용할 때 0으로 바뀜.
+
+
+- 비트가 켜져 있다면 끄고 꺼져있다면 켜기(토글하기)  
+    **플래그^=마스크**  
+
+
+flag  0000 0000  
+mask  0000 0100  (OR연산)  
+ㅡㅡㅡㅡㅡㅡㅡㅡ  
+flag  0000 0100  
+
+# Unit 25_ 연산자 우선순위
+
+우선 순위 1위만 나타내며, 자세한 순위에 따른 연산자는 코딩도장 책 p305참고 바람.
+
+연산자|설명|결합방향
+|:--:|:--:|:--:|
+x++|증가연산자|-&gt;
+x--|감소연산자|"
+()|함수 호출|"
+[]|배열 첨자|"
+-&gt;|포인터로 요소 선택|"
+x=는 변수
+
+10 + 2 / (5-3) * ++3 = 14
+
+&lt;&lt;보다 +의 우선순위가 더 높다.
+
+Q. 비트 연산자는 어디에 사용?  
+--&gt;간단한 암호화에 사용됨.
+```
+#include <stdio.h>
+int main()
+{
+    int plane =100;  //암호화 할 숫자
+    int key = 58;  //암호키
+
+    int encrypted = plane ^ key;
+    printf("%d\n", encrypted);  //암호화
+
+    int decrypted = encrypted ^ key;
+    printf("%d\n", decrypted);  //복호화
+    return 0;
+}
+```
+XOR암호화는 너무 간단하게 풀리기 때문에 AES,RSA등을 실무에서 사용.  
+(코딩도장 p319)
+
+스와이프
+1. 제 3의 변수 선언(python이랑 똑같)
+2. XOR 연산자를 세번 사용해서.
+```
+a=a^b  
+b=a^b  
+a=a^b  
+```
+
+# Unit26_ Switch 분기문
+- 형식이 균일하며 처리해야 할 조건이 많을 때 사용.
+
+```
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main()
+{
+    int num1;
+
+    scanf("%d", &amp;num1);
+
+    switch (num1)
+    {
+    case 1:                       //num1이 1일 때
+        printf("1입니다.\n");
+        break;        
+    case 2:
+        printf("2입니다.\n");
+        break;
+
+    default:
+        printf("다시눌럿!!!!\n");
+        break;
+
+    }
+    return 0;
+}
+```
+
+case 다음에는 반드시 값(리터럴)이 와야 함.
+변수나 조건식이 올 수 없다.
+
+<정리>
+문법|바뀌는 거
+|:--:|:--:|
+else if|값, 조건식
+switch|값
+
+break를 생략하면 그 다음에 있는 case나 default가 계속 실행된다.
+
+이를 응용하면 or 사용가능.
+
+```
+switch(num1)
+{
+
+    case 1;   //num1=1일 때
+    case 2;
+    printf("1또는 2입니다.\n");
+    break;
+
+}
+```
+!! switch에서 판별할 변수는 정수 자료형만 사용할 수 있다.  실수 자료형인 float,double은 사용할 수 없다. (char도 정수 자료형임)
+
+# Unit27_ for 반복문 (02-27)
+
+```
+for (초기식; 조건식; 변화식)    ///loop statement
+{
+    반복할 코드       //loop body
+}
+```
+```
+for (int i=0; i&lt;100; i++)
+```
+for 문에서 선언한 변수는 for루프 밖에서는 사용할 수 없다.
+만약 사용하고 싶다면
+```
+int i;
+for (i=0;i&lt;100;i++0)
+```
+이렇게 for 문 밖에서 변수 선언해줘야 한다.
+
+for 반복문은 if 조건문과 마찬가지로 끝에 ;을 붙이면 안 됨!!!  
+; 붙이면 반복 되지 않고 한번만 실행됨.
+
+
+for문의 loop body에서 중괄호를 묶어주지 않으면 첫번째 줄만 반복되고 그 다음줄부터는 한번만 실행된다.
+```
+for (int i=0; i&lt;5; i++)
+printf("Hello\n");
+printf("MMM\n");
+```
+출력
+
+Hello  
+Hello  
+Hello  
+Hello  
+Hello  
+MMM
+
+
+i를 따로 선언하지 않고 count를 그대로 사용할 수도.
+```
+int count;
+
+scanf("%d",&amp;count);
+
+for (;count&gt;0; count--)   // 초깃값 없이 scanf에서 사용한 변수를 감소시켜서 반복.
+{
+    printf("Hello world %d\n", count);
+
+}
+return 0;
+}
+```
+또는 초기식 부분에서 scanf 함수를 호출할 수도..
+for (scanf("%d", &amp;count); count&gt;0; count--)
+
+```
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int main()
+{
+    int i;
+    for (i= 10; i &gt;= 1; i--)
+    {
+        printf("%d",i); ##############
+    }
+    printf("\n%d", i);  ##############
+    return 0;
+}
+```
+Python이랑 헷갈릴 수 있는 부분.  
+loop body에서는 loop statement의 조건을 만족할 때만 실행된다!!!!!!!!
+
+++중단==ctrl+C  
+++난수인데 10 미만의 숫자로 만들고 싶다?? -&gt; 난수에 %10하면 된다.
+# Unit28_ while 반복문
+
+```
+초기식
+while (조건식)    //loop statement
+{                     /
+    반복할 코드         loop body
+    변화식
+}                     /
+```
+
+1. for 과 마찬가지로 while도 뒤에 ;을  붙이면 안 됨.
+; 붙이면 아무것도 출력되지 않고 중괄호 안에 있는 변화식은 전혀 실행되지 않는다.
+
+2. while 로  무한루프 만들기  
+**while (1)**  
+or  
+**while (true)**
+*bool 사용해서*
+</stdio.h></정리></stdio.h></stdio.h></주의></설명></stdbool.h></stdio.h></stdbool.h></stdio.h></stdio.h></stdio.h></stdio.h></stdio.h></math.h></참고>
+
+                </div>
+            </section>
+
+            <!-- Email subscribe form at the bottom of the page -->
+            
+
+            <footer class="post-full-footer">
+                <!-- Everything inside the #author tags pulls data from the author -->
+                <!-- #author-->
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <section class="author-card">
+                            
+                            <section class="author-card-content">
+                                <h4 class="author-card-name"><a href="/author/hayeon">hayeonBaek</a></h4>
+                                
+                                    <p>지능기전 21학번입니다.</p>
+                                
+                            </section>
+                        </section>
+                        <div class="post-full-footer-right">
+                            <a class="author-card-button" href="/author/hayeon">Read More</a>
+                        </div>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                <!-- /author  -->
+            </footer>
+
+            <!-- If you use Disqus comments, just uncomment this block.
+            The only thing you need to change is "test-apkdzgmqhj" - which
+            should be replaced with your own Disqus site-id. -->
+            
+
+        </article>
+
+    </div>
+</main>
+
+<!-- Links to Previous/Next posts -->
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+                
+                
+                
+                
+                    <article class="read-next-card"
+                        
+                            style="background-image: url(/assets/images/blog-cover.jpg)"
+                        
+                    >
+                        <header class="read-next-card-header">
+                            <small class="read-next-card-header-sitetitle">&mdash; SjMogakko.github.io &mdash;</small>
+                            
+                                <h3 class="read-next-card-header-title"><a href="/tag/hayeon/">Hayeon</a></h3>
+                            
+                        </header>
+                        <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
+</div>
+                        <div class="read-next-card-content">
+                            <ul>
+                                
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/realhayeon">2021-02-20 백하연</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                            </ul>
+                        </div>
+                        <footer class="read-next-card-footer">
+                            <a href="/tag/hayeon/">
+                                
+                                    See all 1 posts  →
+                                
+                            </a>
+                        </footer>
+                    </article>
+                
+            
+
+            <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
+            
+                
+
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/second">
+                <div class="post-card-image" style="background-image: url(/asssets/images/1400X800(bg_image).png)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/second">
+                <header class="post-card-header">
+                    
+                        
+                            
+                                <span class="post-card-tags">Ojaeo</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">2월 4주차 백준 4문제 풀이</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    
+                        <p></p>
+                    
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                <span class="reading-time">
+                    
+                    
+                      1 min read
+                    
+                </span>
+            </footer>
+        </div>
+    </article>
+
+            
+
+            <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
+            
+                
+
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/Hyeonuk(revised)">
+                <div class="post-card-image" style="background-image: url(/assets/images/1400x800(bg_image).png)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/Hyeonuk(revised)">
+                <header class="post-card-header">
+                    
+                        
+                            
+                                <span class="post-card-tags">Hyeonuk</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">First week of Mogakco</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    
+                        <p></p>
+                    
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                <span class="reading-time">
+                    
+                    
+                      1 min read
+                    
+                </span>
+            </footer>
+        </div>
+    </article>
+
+            
+
+        </div>
+    </div>
+</aside>
+
+<!-- Floating header which appears on-scroll, included from includes/floating-header.hbs -->
+<div class="floating-header">
+    <div class="floating-header-logo">
+        <a href="/">
+            
+                <img src="/assets/images/favicon.png" alt="SjMogakko.github.io icon" />
+            
+            <span>SjMogakko.github.io</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">2월 마지막 주(코딩도장)</div>
+    <div class="floating-header-share">
+        <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
+</svg>
+</div>
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=2%EC%9B%94+%EB%A7%88%EC%A7%80%EB%A7%89+%EC%A3%BC%28%EC%BD%94%EB%94%A9%EB%8F%84%EC%9E%A5%29&amp;url=https://SjMogakko.github.io/jasper2/Feb.last.md"
+            onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+
+        </a>
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://SjMogakko.github.io/jasper2/Feb.last.md"
+            onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
+
+        </a>
+    </div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+<!-- /post -->
+
+<!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
+
+
+        <!-- Previous/next page links - displayed on every page -->
+        
+
+        <!-- The footer at the very bottom of the screen -->
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="/">SjMogakko.github.io</a> &copy; 2021</section>
+                <section class="poweredby">Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> &
+                    <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> using
+                    <a href="https://github.com/jekyller/jasper2" target="_blank" rel="noopener">Jasper2</a></section>
+                <nav class="site-footer-nav">
+                    <a href="/">Latest Posts</a>
+                    
+                    
+                    <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- The big email subscribe modal content -->
+    
+
+    <!-- highlight.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-abap.min.js"></script>
+    <script>$(document).ready(function() {
+      $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block);
+      });
+    });</script>
+
+    <!-- jQuery + Fitvids, which makes all video embeds responsive -->
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://demo.ghost.io/assets/js/jquery.fitvids.js?v=724281a32e"></script>
+
+
+    <!-- Paginator increased to "infinit" in _config.yml -->
+    <!-- if paginator.posts  -->
+    <!-- <script>
+        var maxPages = parseInt('');
+    </script>
+    <script src="/assets/js/infinitescroll.js"></script> -->
+    <!-- /endif -->
+
+    
+
+
+    <!-- Add Google Analytics  -->
+    <!-- Google Analytics Tracking code -->
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+
+ </script>
+
+
+    <!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. -->
+    
+        <script>
+
+// NOTE: Scroll performance is poor in Safari
+// - this appears to be due to the events firing much more slowly in Safari.
+//   Dropping the scroll event and using only a raf loop results in smoother
+//   scrolling but continuous processing even when not scrolling
+$(document).ready(function () {
+    // Start fitVids
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    // End fitVids
+
+    var progressBar = document.querySelector('progress');
+    var header = document.querySelector('.floating-header');
+    var title = document.querySelector('.post-full-title');
+
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var ticking = false;
+
+    function onScroll() {
+        lastScrollY = window.scrollY;
+        requestTick();
+    }
+
+    function onResize() {
+        lastWindowHeight = window.innerHeight;
+        lastDocumentHeight = $(document).height();
+        requestTick();
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+        }
+        ticking = true;
+    }
+
+    function update() {
+        var trigger = title.getBoundingClientRect().top + window.scrollY;
+        var triggerOffset = title.offsetHeight + 35;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
+
+        // show/hide floating header
+        if (lastScrollY >= trigger + triggerOffset) {
+            header.classList.add('floating-active');
+        } else {
+            header.classList.remove('floating-active');
+        }
+
+        progressBar.setAttribute('max', progressMax);
+        progressBar.setAttribute('value', lastScrollY);
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onResize, false);
+
+    update();
+});
+</script>
+
+    
+
+    <!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag -->
+    <!-- ghost_foot -->
+
+</body>
+</html>
