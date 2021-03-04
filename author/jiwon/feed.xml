@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="/author/jiwon/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/" rel="alternate" type="text/html" />
-  <updated>2021-03-04T01:17:47+09:00</updated>
+  <updated>2021-03-04T11:20:45+09:00</updated>
   <id>/author/jiwon/feed.xml</id>
 
   
@@ -44,6 +44,321 @@
   
   
 
+  
+    <entry>
+      <title type="html">유지원 둘째 주</title>
+      <link href="/jiwon" rel="alternate" type="text/html" title="유지원 둘째 주" />
+      <published>2021-02-28T17:00:00+09:00</published>
+      <updated>2021-02-28T17:00:00+09:00</updated>
+      <id>/jiwon</id>
+      <content type="html" xml:base="/jiwon">&lt;p&gt;개인 블로그에 한국어로 작성을 해놓았기 때문에 깃허브 블로그에는 영어로 작성하며 복습하겠습니다.&lt;/p&gt;
+&lt;h6 id=&quot;my-english-skill-is-not-good-and-i-dont-care-about-grammar-so-some-words-are-inaccurate&quot;&gt;&lt;em&gt;My english skill is not good and I don’t care about grammar. So some words are inaccurate.&lt;/em&gt;&lt;/h6&gt;
+&lt;h6 id=&quot;please-understand&quot;&gt;&lt;em&gt;Please understand!&lt;/em&gt;&lt;/h6&gt;
+&lt;h2 id=&quot;c언어-express2015&quot;&gt;C언어 Express(2015)&lt;/h2&gt;
+
+&lt;h2 id=&quot;p60p66&quot;&gt;p.60~p.66&lt;/h2&gt;
+&lt;h1 id=&quot;starting-grammar&quot;&gt;Starting Grammar&lt;/h1&gt;
+&lt;h2 id=&quot;ex-23&quot;&gt;ex 2.3&lt;/h2&gt;
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
+&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+  &lt;p&gt;statement started with # is preprocessor indicator.
+Do not end this sentence with ;(b/c this is not ‘sentence’)&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;preprocessor: part of compiler. pre-stop before compile.&lt;/li&gt;
+    &lt;li&gt;#include header file: command to include particular file to present location&lt;/li&gt;
+    &lt;li&gt;header file: have information which compiler needs&lt;/li&gt;
+    &lt;li&gt;stdio.h: header file which has information about input/ouput func.&lt;/li&gt;
+    &lt;li&gt;almost programs use more than one header file&lt;/li&gt;
+    &lt;li&gt;empty line don’t affects to result&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+  &lt;p&gt;statement which defines func’s output/input type, name. This defines func main()&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;int main(void): value’s type that func prints is integer&lt;/li&gt;
+    &lt;li&gt;void: empty. func’s input is empty.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+  &lt;p&gt;show where is func’s start and end.
+between them, put func’s body which peforms func’s function.
+put ; end of the statement.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+  &lt;p&gt;call printf() func and print txt on the screen.&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;f: short for formatted&lt;/li&gt;
+    &lt;li&gt;i.e print func which decides format&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+  &lt;ul&gt;
+    &lt;li&gt;return: use when func finishes the process and return the result&lt;/li&gt;
+    &lt;li&gt;when execute sentence return 0;, main() func ends the process and put out the value to outside&lt;/li&gt;
+    &lt;li&gt;outside: OS(Operation System) which runs this program&lt;/li&gt;
+    &lt;li&gt;
+      &lt;h2 id=&quot;usally-value-of-0-means-the-program-ends-normally&quot;&gt;usally, value of 0 means the program ends normally&lt;/h2&gt;
+      &lt;h2 id=&quot;p66p73&quot;&gt;p.66~p.73&lt;/h2&gt;
+      &lt;h1 id=&quot;error-correction-and-debugging&quot;&gt;Error Correction and Debugging&lt;/h1&gt;
+      &lt;h3 id=&quot;types-of-error-by-cause&quot;&gt;types of error by cause&lt;/h3&gt;
+      &lt;ol&gt;
+        &lt;li&gt;compile time error: syntax error&lt;/li&gt;
+        &lt;li&gt;run-time error&lt;/li&gt;
+        &lt;li&gt;logical error&lt;/li&gt;
+      &lt;/ol&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h3 id=&quot;types-of-error-by-level-of-seriousness&quot;&gt;types of error by level of seriousness&lt;/h3&gt;
+  &lt;ol&gt;
+    &lt;li&gt;error: critical. can’t compile and link&lt;/li&gt;
+    &lt;li&gt;warning: compile, link and run are possible but have potential problems.&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;debugger&quot;&gt;Debugger&lt;/h3&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;h2 id=&quot;software-tool-that-progresses-the-source-code-line-by-line-and-checks-wrong-code-and-how-work-in-the-particulat-situation&quot;&gt;software tool that progresses the source code line by line and checks wrong code and how work in the particulat situation.&lt;/h2&gt;
+      &lt;h2 id=&quot;p80p100&quot;&gt;p.80~p.100&lt;/h2&gt;
+      &lt;h1 id=&quot;components-of-c-program&quot;&gt;Components of C Program&lt;/h1&gt;
+      &lt;h2 id=&quot;ex-31-&quot;&gt;ex 3.1 &lt;Addition Program=&quot;&quot;&gt;&lt;/Addition&gt;&lt;/h2&gt;
+      &lt;p&gt;```c
+// program that calculates sum of two numbers
+#include &lt;stdio.h&gt;
+int main(void)
+{
+  int x;		// variable which saves first integer
+  int y;		// variable which saves second integer
+  int sum;	// variable which saves sum&lt;/stdio.h&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;x = 100;
+y = 200;
+
+sum = x + y;
+printf(&quot;Sum: %d&quot;, sum);
+
+return 0; } ``` &amp;gt; ### comment : for reader! - file's size is not affected by comments 1. style 1 ```c /* file name: add.c description: Sum 작성자: 유지원 ``` 1. style 2 ```c /*************************** file name: add.c description: Sum 작성자: 유지원 ```
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;indentation&quot;&gt;indentation&lt;/h3&gt;
+  &lt;p&gt;: for reader&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;preprocessor&quot;&gt;preprocessor&lt;/h3&gt;
+  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#include &amp;lt;stdio.h&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+  &lt;p&gt;: include header file stdio.h to source code
+header file&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;txt file which includes part of code. have “.h”&lt;/li&gt;
+    &lt;li&gt;stdio.h: short for “standard input output”. definition of library funcs about standard input ouput in here.&lt;/li&gt;
+    &lt;li&gt;standard input: input from keyboard&lt;/li&gt;
+    &lt;li&gt;standard ouput: ouput form monitor&lt;/li&gt;
+    &lt;li&gt;library func: provide func that developers use frequently. made in advance.&lt;/li&gt;
+    &lt;li&gt;in process of link, library becomes executable file combining with object file.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;function&quot;&gt;function&lt;/h3&gt;
+  &lt;ul&gt;
+    &lt;li&gt;statement: detail steps in func which func performs. end with ;
+      &lt;h4 id=&quot;types-of-func&quot;&gt;types of func.&lt;/h4&gt;
+      &lt;ol&gt;
+        &lt;li&gt;user defined function: user writes personally&lt;/li&gt;
+        &lt;li&gt;library function: call from outside.&lt;/li&gt;
+      &lt;/ol&gt;
+    &lt;/li&gt;
+    &lt;li&gt;call: use the func name and execute it&lt;/li&gt;
+    &lt;li&gt;first of all, main() is executed. others are called by main() directly or indirectly. who calls main() is OS like window7.
+      &lt;h3 id=&quot;structure-of-func&quot;&gt;structure of func.&lt;/h3&gt;
+      &lt;p&gt;func. denfinition’s first line: header&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;table&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;td&gt;func’s print(return) format&lt;/td&gt;
+            &lt;td&gt;func’s name&lt;/td&gt;
+            &lt;td&gt;func’s input format&lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/li&gt;
+    &lt;li&gt;no ; (not the statement)&lt;/li&gt;
+    &lt;li&gt;ex. int main(void): return format is integer, func’s name is main, no input.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;printf&quot;&gt;printf()&lt;/h3&gt;
+  &lt;ul&gt;
+    &lt;li&gt;formatted: print data as particular format&lt;/li&gt;
+    &lt;li&gt;argument: data in (). conveyed to func.&lt;/li&gt;
+    &lt;li&gt;format specifiers: %d&lt;/li&gt;
+    &lt;li&gt;format and variable’s data types should be correspond&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;scanf&quot;&gt;scanf()&lt;/h3&gt;
+  &lt;p&gt;: turn entered data from keyboard to specified format and save to integer.&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&amp;amp;(Ampersund): in front of variable name.(variables are located in memory. So they have address.)&lt;/li&gt;
+    &lt;li&gt;scanf() gets variabl’s adress.(different with printf(). this gets variable’s value.)&lt;/li&gt;
+    &lt;li&gt;Be careful error about scanf_s(). In this situation, check out SDL check.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;p100p103&quot;&gt;p.100~p.103&lt;/h2&gt;
+&lt;h1 id=&quot;program-examples&quot;&gt;Program Examples&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;h2 id=&quot;ex1-calculation-annual-salary-program&quot;&gt;ex.1: Calculation Annual Salary Program&lt;/h2&gt;
+  &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;//저축액을 계산하는 프로그램
+&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
+&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;salary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;//월급
+&lt;/span&gt;	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deposit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//저축액
+&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;월급을 입력하시오:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;scanf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;%d&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;salary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//입력받은 값을 salary 변수 주소에 저장
+&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;deposit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;salary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;10년 동안의 저축액: %d&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deposit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;h2 id=&quot;ex2-calculation-circles-demension-program&quot;&gt;ex.2: Calculation Circle’s Demension Program&lt;/h2&gt;
+  &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;//원의 면적을 계산하는 프로그램
+&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
+&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;radius&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;//원의 반지름
+&lt;/span&gt;	&lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;area&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;		&lt;span class=&quot;c1&quot;&gt;//면적
+&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;반지름을 입력하시오:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;scanf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;%f&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;radius&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+	&lt;span class=&quot;n&quot;&gt;area&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;14&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;radius&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;radius&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;원의 면적: %f&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;area&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;h2 id=&quot;ex3-calculation-exchange-rate-program&quot;&gt;ex.3: Calculation Exchange Rate Program&lt;/h2&gt;
+  &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;//환율을 계산하는 프로그램
+&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
+&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;//원/달러 환율
+&lt;/span&gt;	&lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;usd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;//달러화
+&lt;/span&gt;	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;krw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;//원화
+&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;달러에 대한 원화 환율을 입력하시오:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;//입력 안내 메시지
+&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;scanf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;%f&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;								&lt;span class=&quot;c1&quot;&gt;//사용자로부터 환율 입력
+&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;원화 금액을 입력하시오:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;				&lt;span class=&quot;c1&quot;&gt;//입력 안내 메시지
+&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;scanf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;%d&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;krw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;								&lt;span class=&quot;c1&quot;&gt;//원화 금액 입력
+&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;usd&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;krw&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;								&lt;span class=&quot;c1&quot;&gt;//달러화로 환산
+&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;원화 %d원은 %f달러입니다.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;krw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;usd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;//계산 결과 출력
+&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;h2 id=&quot;ex4-calculation-squares-perimeter-and-dimension-program&quot;&gt;ex.4: Calculation Square’s perimeter and dimension Program&lt;/h2&gt;
+  &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
+&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;area&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;perimeter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;직사각형의 가로 길이를 입력하세요:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;scanf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;%lf&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;직사각형의 세로 길이를 입력하세요:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;scanf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;%lf&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+	&lt;span class=&quot;n&quot;&gt;area&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;w&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;perimeter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;w&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;직사각형의 둘레는 %1f이고 면적은 %1f입니다.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;area&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;perimeter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+&lt;/blockquote&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>JiwonRyu</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="Jiwon" />
+      
+
+      
+        <summary type="html">개인 블로그에 한국어로 작성을 해놓았기 때문에 깃허브 블로그에는 영어로 작성하며 복습하겠습니다. My english skill is not good and I don’t care about grammar. So some words are inaccurate. Please understand! C언어 Express(2015)</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">유지원 첫째 주</title>
